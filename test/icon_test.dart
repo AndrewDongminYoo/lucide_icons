@@ -23,7 +23,7 @@ void main() {
       ),
     );
     final text = tester.widget<RichText>(find.byType(RichText));
-    expect(text.text.style!.color, const Color(0xFF666666).withOpacity(0.5));
+    expect(text.text.style!.color, const Color(0xFF666666).withValues(alpha: 0.5));
   });
 
   testWidgets('Icon sizing - no theme, default size', (
