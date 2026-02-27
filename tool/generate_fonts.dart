@@ -1,7 +1,10 @@
 import 'dart:developer';
 import 'dart:io';
 
-import 'package:recase/recase.dart';
+String _toCamelCase(String name) {
+  final parts = name.split('-');
+  return parts.first + parts.skip(1).map((p) => p[0].toUpperCase() + p.substring(1)).join();
+}
 
 void main(List<String> args) {
   final cssFile = File(args[0]);
@@ -29,7 +32,7 @@ void main(List<String> args) {
     final hex = match.group(2)!.toUpperCase();
 
     generatedOutput.add(
-      '  static const IconData ${ReCase(name).camelCase} = LucideIconData(0x$hex);\n',
+      '  static const IconData ${_toCamelCase(name)} = LucideIconData(0x$hex);\n',
     );
 
     log('$hex $name');
