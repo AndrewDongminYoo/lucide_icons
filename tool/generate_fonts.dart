@@ -1,6 +1,6 @@
+import 'dart:developer';
 import 'dart:io';
 
-import 'package:flutter/foundation.dart';
 import 'package:html/parser.dart' show parse;
 import 'package:recase/recase.dart';
 
@@ -8,9 +8,7 @@ void main(List<String> args) {
   final fontsPreviewFile = File(args[0]);
 
   if (!fontsPreviewFile.existsSync()) {
-    if (kDebugMode) {
-      print('lucide preview file not found');
-    }
+    log('lucide preview file not found');
     exit(0);
   }
 
@@ -40,9 +38,7 @@ void main(List<String> args) {
       '  static const IconData ${ReCase(name).camelCase} = LucideIconData(0x${val.toUpperCase()});\n',
     );
 
-    if (kDebugMode) {
-      print('$val $name');
-    }
+    log('$val $name');
   }
 
   generatedOutput.add('}\n');

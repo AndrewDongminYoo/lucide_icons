@@ -26,9 +26,7 @@ class LucideIcons {
   static const IconData alignCenterVertical = LucideIconData(0xF110);
   static const IconData alignEndHorizontal = LucideIconData(0xF111);
   static const IconData alignEndVertical = LucideIconData(0xF112);
-  static const IconData alignHorizontalDistributeCenter = LucideIconData(
-    0xF113,
-  );
+  static const IconData alignHorizontalDistributeCenter = LucideIconData(0xF113);
   static const IconData alignHorizontalDistributeEnd = LucideIconData(0xF114);
   static const IconData alignHorizontalDistributeStart = LucideIconData(0xF115);
   static const IconData alignHorizontalJustifyCenter = LucideIconData(0xF116);
