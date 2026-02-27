@@ -19,6 +19,9 @@ dev_dependencies:
 very_good_analysis: ^10.2.0
 
 flutter:
+  assets:
+    - assets/lucide.css
+    - assets/lucide.ttf
   fonts:
     - family: Lucide
       fonts:
