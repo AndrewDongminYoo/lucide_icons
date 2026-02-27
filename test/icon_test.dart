@@ -1,9 +1,14 @@
 // Tests adapted from https://github.com/fluttercommunity/font_awesome_flutter/blob/master/test/fa_icon_test.dart
 // Copyright 2014 The Flutter Authors. All rights reserved.
 
+// 🐦 Flutter imports:
 import 'package:flutter/material.dart';
-import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter/widgets.dart';
+
+// 📦 Package imports:
+import 'package:flutter_test/flutter_test.dart';
+
+// 🌎 Project imports:
 import 'package:lucide_icons/lucide_icons.dart';
 
 void main() {

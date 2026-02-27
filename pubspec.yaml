@@ -5,8 +5,8 @@ homepage: https://lucide.dev
 repository: https://github.com/lucide-icons/lucide
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
-  flutter: ">=1.17.0"
+  sdk: ">=3.8.0 <4.0.0"
+  flutter: ">=2.5.0"
 
 dependencies:
   flutter:
@@ -16,11 +16,15 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   html: ^0.15.0
+  import_sorter: ^4.6.0
   recase: ^4.0.0
-  lint: ^1.5.3
+  very_good_analysis: ^10.2.0
 
 flutter:
   fonts:
     - family: Lucide
       fonts:
         - asset: assets/lucide.ttf
+
+import_sorter:
+  emojis: true
