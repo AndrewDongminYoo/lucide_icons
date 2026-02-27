@@ -1,20 +1,19 @@
 import 'dart:developer';
 import 'dart:io';
 
-import 'package:html/parser.dart' show parse;
 import 'package:recase/recase.dart';
 
 void main(List<String> args) {
-  final fontsPreviewFile = File(args[0]);
+  final cssFile = File(args[0]);
 
-  if (!fontsPreviewFile.existsSync()) {
-    log('lucide preview file not found');
+  if (!cssFile.existsSync()) {
+    log('lucide.css file not found');
     exit(0);
   }
 
-  final content = fontsPreviewFile.readAsStringSync();
-  final c = parse(content);
-  final list = c.getElementsByClassName('glyph');
+  final content = cssFile.readAsStringSync();
+  final pattern = RegExp(r'\.icon-([^:]+)::before\s*\{\s*content:\s*"\\([0-9a-fA-F]+)";\s*\}');
+  final matches = pattern.allMatches(content);
 
   final generatedOutput = <String>[
     '// 🐦 Flutter imports:\n',
@@ -25,20 +24,15 @@ void main(List<String> args) {
     'class LucideIcons {\n',
   ];
 
-  for (final icon in list) {
-    final name = icon.getElementsByClassName('class').first.attributes['value']!.replaceFirst('.icon-', '');
-    final val = icon
-        .getElementsByClassName('point')
-        .first
-        .attributes['value']!
-        .replaceFirst('&#x', '')
-        .replaceFirst(';', '');
+  for (final match in matches) {
+    final name = match.group(1)!;
+    final hex = match.group(2)!.toUpperCase();
 
     generatedOutput.add(
-      '  static const IconData ${ReCase(name).camelCase} = LucideIconData(0x${val.toUpperCase()});\n',
+      '  static const IconData ${ReCase(name).camelCase} = LucideIconData(0x$hex);\n',
     );
 
-    log('$val $name');
+    log('$hex $name');
   }
 
   generatedOutput.add('}\n');
