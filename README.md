@@ -29,7 +29,7 @@ npm install lucide-static
 
 ```sh
 cp node_modules/lucide-static/font/lucide.css assets/lucide.css
-cp node_modules/lucide-static/font/lucide.ttf  assets/lucide.ttf
+cp node_modules/lucide-static/font/lucide.ttf assets/lucide.ttf
 ```
 
 ### **3. Regenerate `lib/lucide_icons.dart`**

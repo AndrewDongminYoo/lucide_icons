@@ -23,7 +23,13 @@ void main() {
       ),
     );
     final text = tester.widget<RichText>(find.byType(RichText));
-    expect(text.text.style!.color, const Color(0xFF666666).withValues(alpha: 0.5));
+
+    // Color opacity is stored in 8-bit alpha; 0.5 rounds to 128/255 (0.50196..),
+    // so exact 0.5 equality is flaky across framework/color internals.
+    expect(text.text.style!.color!.r, closeTo(0.4, 1e-6));
+    expect(text.text.style!.color!.g, closeTo(0.4, 1e-6));
+    expect(text.text.style!.color!.b, closeTo(0.4, 1e-6));
+    expect(text.text.style!.color!.a, closeTo(128 / 255, 1e-6));
   });
 
   testWidgets('Icon sizing - no theme, default size', (
