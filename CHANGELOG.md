@@ -13,5 +13,4 @@
   eliminating the `html` and `recase` dev dependencies.
 - Modernized codebase to Dart 3 conventions (e.g. `switch` expressions, `///` doc comments,
   `super` parameters).
-- Upgraded `very_good_analysis` and SDK constraints (`>=3.8.0 <4.0.0`).
-- Updated `LucideIconData` to accept an optional `Color` via `Color.from()` (Dart 3.3+).
+- Upgraded `very_good_analysis` and SDK constraints (`>=3.8.0 <4.0.0`, Flutter `>=3.24.0`).

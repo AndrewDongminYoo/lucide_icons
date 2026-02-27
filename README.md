@@ -40,3 +40,18 @@ dart run tool/generate_fonts.dart assets/lucide.css
 
 The generator parses the CSS file for `.icon-<name>::before { content: "\<hex>"; }` rules and
 produces the corresponding Dart constants automatically.
+
+#### Optional: embed SVG previews in dartdoc
+
+Pass `--inline-svg` to embed each icon's SVG as a base64 data URI in its `///` doc comment.
+This enables inline icon previews in the IDE when hovering over a `LucideIcons.*` constant.
+
+```sh
+# Use SVGs from the local npm install (fastest)
+dart run tool/generate_fonts.dart assets/lucide.css \
+  --inline-svg \
+  --svg-dir=node_modules/lucide-static/icons
+
+# Fall back to fetching SVGs remotely if the local directory is absent
+dart run tool/generate_fonts.dart assets/lucide.css --inline-svg
+```
