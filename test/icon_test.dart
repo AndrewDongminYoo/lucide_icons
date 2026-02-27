@@ -12,49 +12,41 @@ void main() {
       const Directionality(
         textDirection: TextDirection.ltr,
         child: IconTheme(
-          data: IconThemeData(
-            color: Color(0xFF666666),
-            opacity: 0.5,
-          ),
+          data: IconThemeData(color: Color(0xFF666666), opacity: 0.5),
           child: Icon(LucideIcons.bot),
         ),
       ),
     );
-    final RichText text = tester.widget(find.byType(RichText));
+    final text = tester.widget<RichText>(find.byType(RichText));
     expect(text.text.style!.color, const Color(0xFF666666).withOpacity(0.5));
   });
 
-  testWidgets('Icon sizing - no theme, default size',
-      (WidgetTester tester) async {
+  testWidgets('Icon sizing - no theme, default size', (
+    WidgetTester tester,
+  ) async {
     await tester.pumpWidget(
       const Directionality(
         textDirection: TextDirection.ltr,
-        child: Center(
-          child: Icon(LucideIcons.bot),
-        ),
+        child: Center(child: Icon(LucideIcons.bot)),
       ),
     );
 
-    final RenderBox renderObject = tester.renderObject(find.byType(Icon));
-    expect(renderObject.size, equals(const Size.square(24.0)));
+    final renderObject = tester.renderObject<RenderBox>(find.byType(Icon));
+    expect(renderObject.size, equals(const Size.square(24)));
   });
 
-  testWidgets('Icon sizing - no theme, explicit size',
-      (WidgetTester tester) async {
+  testWidgets('Icon sizing - no theme, explicit size', (
+    WidgetTester tester,
+  ) async {
     await tester.pumpWidget(
       const Directionality(
         textDirection: TextDirection.ltr,
-        child: Center(
-          child: Icon(
-            LucideIcons.bot,
-            size: 96.0,
-          ),
-        ),
+        child: Center(child: Icon(LucideIcons.bot, size: 96)),
       ),
     );
 
-    final RenderBox renderObject = tester.renderObject(find.byType(Icon));
-    expect(renderObject.size, equals(const Size.square(96.0)));
+    final renderObject = tester.renderObject<RenderBox>(find.byType(Icon));
+    expect(renderObject.size, equals(const Size.square(96)));
   });
 
   testWidgets('Icon sizing - sized theme', (WidgetTester tester) async {
@@ -63,82 +55,72 @@ void main() {
         textDirection: TextDirection.ltr,
         child: Center(
           child: IconTheme(
-            data: IconThemeData(size: 36.0),
+            data: IconThemeData(size: 36),
             child: Icon(LucideIcons.bot),
           ),
         ),
       ),
     );
 
-    final RenderBox renderObject = tester.renderObject(find.byType(Icon));
-    expect(renderObject.size, equals(const Size.square(36.0)));
+    final renderObject = tester.renderObject<RenderBox>(find.byType(Icon));
+    expect(renderObject.size, equals(const Size.square(36)));
   });
 
-  testWidgets('Icon sizing - sized theme, explicit size',
-      (WidgetTester tester) async {
+  testWidgets('Icon sizing - sized theme, explicit size', (
+    WidgetTester tester,
+  ) async {
     await tester.pumpWidget(
       const Directionality(
         textDirection: TextDirection.ltr,
         child: Center(
           child: IconTheme(
-            data: IconThemeData(size: 36.0),
-            child: Icon(
-              LucideIcons.bot,
-              size: 48.0,
-            ),
+            data: IconThemeData(size: 36),
+            child: Icon(LucideIcons.bot, size: 48),
           ),
         ),
       ),
     );
 
-    final RenderBox renderObject = tester.renderObject(find.byType(Icon));
-    expect(renderObject.size, equals(const Size.square(48.0)));
+    final renderObject = tester.renderObject<RenderBox>(find.byType(Icon));
+    expect(renderObject.size, equals(const Size.square(48)));
   });
 
-  testWidgets('Icon sizing - sizeless theme, default size',
-      (WidgetTester tester) async {
+  testWidgets('Icon sizing - sizeless theme, default size', (
+    WidgetTester tester,
+  ) async {
     await tester.pumpWidget(
       const Directionality(
         textDirection: TextDirection.ltr,
         child: Center(
-          child: IconTheme(
-            data: IconThemeData(),
-            child: Icon(LucideIcons.bot),
-          ),
+          child: IconTheme(data: IconThemeData(), child: Icon(LucideIcons.bot)),
         ),
       ),
     );
 
-    final RenderBox renderObject = tester.renderObject(find.byType(Icon));
-    expect(renderObject.size, equals(const Size.square(24.0)));
+    final renderObject = tester.renderObject<RenderBox>(find.byType(Icon));
+    expect(renderObject.size, equals(const Size.square(24)));
   });
 
-  testWidgets("Changing semantic label from null doesn't rebuild tree ",
-      (WidgetTester tester) async {
+  testWidgets("Changing semantic label from null doesn't rebuild tree ", (
+    WidgetTester tester,
+  ) async {
     await tester.pumpWidget(
       const Directionality(
         textDirection: TextDirection.ltr,
-        child: Center(
-          child: Icon(LucideIcons.bot),
-        ),
+        child: Center(child: Icon(LucideIcons.bot)),
       ),
     );
 
-    final Element richText1 = tester.element(find.byType(RichText));
+    final richText1 = tester.element<Element>(find.byType(RichText));
 
     await tester.pumpWidget(
       const Directionality(
         textDirection: TextDirection.ltr,
-        child: Center(
-          child: Icon(
-            LucideIcons.bot,
-            semanticLabel: 'a label',
-          ),
-        ),
+        child: Center(child: Icon(LucideIcons.bot, semanticLabel: 'a label')),
       ),
     );
 
-    final Element richText2 = tester.element(find.byType(RichText));
+    final richText2 = tester.element<Element>(find.byType(RichText));
 
     // Compare a leaf Element in the Icon subtree before and after changing the
     // semanticLabel to make sure the subtree was not rebuilt.
