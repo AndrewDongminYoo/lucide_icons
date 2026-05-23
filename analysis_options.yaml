@@ -9,5 +9,5 @@ analyzer:
     public_member_api_docs: ignore
 
 formatter:
-  page_width: 80 # default
+  page_width: 120
   trailing_commas: preserve
