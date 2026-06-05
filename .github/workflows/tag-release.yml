@@ -12,17 +12,21 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: tag-release
+  cancel-in-progress: false
+
 jobs:
   tag:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
         with:
-          fetch-depth: 0 # fetch full history and existing tags
+          fetch-tags: true # shallow clone, plus existing tags for collision check
 
       - name: Create tag if missing
         run: |
-          version="$(grep -E '^version:' pubspec.yaml | awk '{print $2}')"
+          version="$(awk '/^version:/ {print $2; exit}' pubspec.yaml)"
           tag="v${version}"
           if git rev-parse "$tag" >/dev/null 2>&1; then
             echo "Tag $tag already exists; nothing to do."
