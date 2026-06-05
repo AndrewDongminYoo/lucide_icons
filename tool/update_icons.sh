@@ -12,7 +12,7 @@
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-cd "$ROOT"
+cd "${ROOT}"
 
 version_spec="${1:-latest}"
 
@@ -25,5 +25,5 @@ cp node_modules/lucide-static/font/lucide.ttf assets/lucide.ttf
 
 # 3. Regenerate lib/lucide_icons.dart with inline SVG dartdoc previews.
 dart run tool/generate_fonts.dart assets/lucide.css \
-  --inline-svg \
-  --svg-dir=./node_modules/lucide-static/icons
+	--inline-svg \
+	--svg-dir=./node_modules/lucide-static/icons
