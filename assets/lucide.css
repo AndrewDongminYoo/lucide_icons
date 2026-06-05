@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1778759021113"); /* IE9*/
+  src: url("lucide.eot?t=1779956629206"); /* IE9*/
   src:
-    url("lucide.eot?t=1778759021113#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1779956629206#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1778759021113") format("woff2"),
-    url("lucide.woff?t=1778759021113") format("woff"),
-    url("lucide.ttf?t=1778759021113") format("truetype"),
-    url("lucide.svg?t=1778759021113") format("svg");
+    url("lucide.woff2?t=1779956629206") format("woff2"),
+    url("lucide.woff?t=1779956629206") format("woff"),
+    url("lucide.ttf?t=1779956629206") format("truetype"),
+    url("lucide.svg?t=1779956629206") format("svg");
 }
 
 [class^="icon-"],
@@ -2635,6 +2635,9 @@
 .icon-globe-2::before {
   content: "\e1f3";
 }
+.icon-globe-check::before {
+  content: "\e6fc";
+}
 .icon-globe-lock::before {
   content: "\e5cd";
 }
@@ -3903,6 +3906,9 @@
 }
 .icon-paperclip::before {
   content: "\e12d";
+}
+.icon-parasol::before {
+  content: "\e6fd";
 }
 .icon-parentheses::before {
   content: "\e444";

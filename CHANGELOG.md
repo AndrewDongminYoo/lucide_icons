@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.17.0 - 2026-06-06
+
+### Added
+
+- Updated icon set to lucide-static@1.17.0, adding the `globeCheck` and `parasol` icons.
+
 ## 1.16.0 - 2026-05-23
 
 ### Added
