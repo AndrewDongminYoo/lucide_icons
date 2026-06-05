@@ -1,0 +1,33 @@
+name: Tag release
+
+# When a version bump lands on main (the auto-update PR is merged, or a manual
+# release commit is pushed), create the matching vX.Y.Z git tag so that git
+# dependencies can pin to it.
+on:
+  push:
+    branches: [main]
+    paths:
+      - pubspec.yaml
+
+permissions:
+  contents: write
+
+jobs:
+  tag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          fetch-depth: 0 # fetch full history and existing tags
+
+      - name: Create tag if missing
+        run: |
+          version="$(grep -E '^version:' pubspec.yaml | awk '{print $2}')"
+          tag="v${version}"
+          if git rev-parse "$tag" >/dev/null 2>&1; then
+            echo "Tag $tag already exists; nothing to do."
+            exit 0
+          fi
+          git tag "$tag"
+          git push origin "$tag"
+          echo "Created and pushed $tag."
