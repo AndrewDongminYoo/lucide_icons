@@ -1,0 +1,139 @@
+name: Update Lucide icons
+
+# npm does not push events to GitHub, so we poll for new lucide-static
+# releases on a schedule. When a newer version than the one recorded in
+# pubspec.yaml is found, the icon set is regenerated and a PR is opened.
+on:
+  schedule:
+    - cron: "0 6 * * *" # daily at 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-icons:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check for a newer lucide-static release
+        id: check
+        run: |
+          latest="$(npm view lucide-static version)"
+          current="$(grep -E '^version:' pubspec.yaml | awk '{print $2}')"
+          echo "latest=$latest" >> "$GITHUB_OUTPUT"
+          echo "current=$current" >> "$GITHUB_OUTPUT"
+          if [ "$latest" = "$current" ]; then
+            echo "Already on lucide-static@$current; nothing to do."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "lucide-static@$latest available (current: $current)."
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Setup pnpm
+        if: steps.check.outputs.changed == 'true'
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node
+        if: steps.check.outputs.changed == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Setup Flutter
+        if: steps.check.outputs.changed == 'true'
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Regenerate icon set
+        if: steps.check.outputs.changed == 'true'
+        env:
+          NEW_VERSION: ${{ steps.check.outputs.latest }}
+        run: |
+          flutter pub get
+          bash tool/update_icons.sh "$NEW_VERSION"
+
+      - name: Bump version and update changelog
+        if: steps.check.outputs.changed == 'true'
+        env:
+          NEW_VERSION: ${{ steps.check.outputs.latest }}
+        run: |
+          # Keep the package version in lockstep with lucide-static.
+          sed -i -E "s/^version: .*/version: ${NEW_VERSION}/" pubspec.yaml
+
+          # Derive added / removed icon names from the regenerated Dart file.
+          ADDED="$(git diff -- lib/lucide_icons.dart \
+            | grep -E '^\+[[:space:]]+static const IconData' \
+            | sed -E 's/.*IconData[[:space:]]+([A-Za-z0-9]+).*/\1/' | sort -u || true)"
+          REMOVED="$(git diff -- lib/lucide_icons.dart \
+            | grep -E '^-[[:space:]]+static const IconData' \
+            | sed -E 's/.*IconData[[:space:]]+([A-Za-z0-9]+).*/\1/' | sort -u || true)"
+          export ADDED REMOVED
+
+          python3 - "$NEW_VERSION" <<'PY'
+          import os, sys, datetime
+
+          version = sys.argv[1]
+          date = datetime.date.today().isoformat()
+          added = [n for n in os.environ.get("ADDED", "").split() if n]
+          removed = [n for n in os.environ.get("REMOVED", "").split() if n]
+
+          def names(items):
+              return ", ".join(f"`{n}`" for n in items)
+
+          lines = [f"## {version} - {date}", "", "### Added", "",
+                   f"- Updated icon set to lucide-static@{version}."]
+          if added:
+              lines.append(f"- New icons: {names(added)}.")
+          if removed:
+              lines += ["", "### Removed", "", f"- Removed icons: {names(removed)}."]
+          entry = "\n".join(lines) + "\n\n"
+
+          with open("CHANGELOG.md", encoding="utf-8") as f:
+              content = f.read()
+
+          header = "# Changelog\n\n"
+          if content.startswith(header):
+              content = header + entry + content[len(header):]
+          else:
+              content = entry + content
+          with open("CHANGELOG.md", "w", encoding="utf-8") as f:
+              f.write(content)
+
+          # Expose a short summary for the PR body.
+          summary = []
+          if added:
+              summary.append(f"**Added ({len(added)}):** {names(added)}")
+          if removed:
+              summary.append(f"**Removed ({len(removed)}):** {names(removed)}")
+          with open(os.environ["GITHUB_ENV"], "a", encoding="utf-8") as f:
+              f.write("PR_SUMMARY<<EOF\n" + ("\n\n".join(summary) or "No icon constants changed.") + "\nEOF\n")
+          PY
+
+      - name: Verify the package still analyzes
+        if: steps.check.outputs.changed == 'true'
+        run: flutter analyze
+
+      - name: Open pull request
+        if: steps.check.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: chore/lucide-static-${{ steps.check.outputs.latest }}
+          commit-message: "feat(icons): update icon set to lucide-static@${{ steps.check.outputs.latest }}"
+          title: "feat(icons): update icon set to lucide-static@${{ steps.check.outputs.latest }}"
+          body: |
+            Automated regeneration triggered by a new lucide-static release.
+
+            - lucide-static: `${{ steps.check.outputs.current }}` → `${{ steps.check.outputs.latest }}`
+
+            ${{ env.PR_SUMMARY }}
+
+            Generated by `.github/workflows/update-icons.yml`.
+          labels: dependencies, icons
+          delete-branch: true
