@@ -12,6 +12,10 @@ on:
 permissions:
   contents: write
 
+# Run Node-based actions on Node 24 to silence the Node 20 deprecation notice.
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
 concurrency:
   group: tag-release
   cancel-in-progress: false
