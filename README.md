@@ -6,6 +6,23 @@ This is a community fork maintained to keep the package up to date, as the origi
 [`lucide_icons`](https://pub.dev/packages/lucide_icons) package is no longer actively maintained.
 The codebase has been modernized to align with Dart 3 conventions.
 
+## Installation
+
+This package is not published to pub.dev. Add it as a git dependency in your
+`pubspec.yaml`, pinning to a release tag:
+
+```yaml
+dependencies:
+  lucide_icons:
+    git:
+      url: https://github.com/AndrewDongminYoo/lucide_icons
+      ref: v1.17.0 # any tag, branch, or commit SHA
+```
+
+Then run `flutter pub get`. Release tags follow the upstream `lucide-static`
+version; see the [tags](https://github.com/AndrewDongminYoo/lucide_icons/tags)
+for the latest.
+
 ## Usage
 
 ```dart
