@@ -33,42 +33,40 @@ Visit [lucide.dev](https://lucide.dev) for the full list of available icons.
 
 ## Updating the icon set
 
-Icons are distributed as a font via the [`lucide-static`](https://www.npmjs.com/package/lucide-static)
-npm package. To update to a newer Lucide release:
+Icons are generated from the [`lucide-static`](https://www.npmjs.com/package/lucide-static)
+npm package. New releases are detected automatically by Dependabot, which opens a
+notification PR; run the **Update Lucide icons** workflow (Actions → Run workflow)
+to produce the regenerated PR.
 
-### **1. Download the latest font assets**
+To regenerate locally, use the bundled [merry](https://pub.dev/packages/merry)
+script — it upgrades `lucide-static`, copies the font assets, and regenerates
+`lib/lucide_icons.dart` with inline SVG previews in one step:
 
 ```sh
-npm install lucide-static
+dart run merry run update-icons
 ```
 
-### **2. Copy font files into `assets/`**
+<details>
+<summary>What the script runs</summary>
 
 ```sh
+# 1. Upgrade the lucide-static dependency
+pnpm add lucide-static@latest
+
+# 2. Copy the font assets into assets/
 cp node_modules/lucide-static/font/lucide.css assets/lucide.css
 cp node_modules/lucide-static/font/lucide.ttf assets/lucide.ttf
-```
 
-### **3. Regenerate `lib/lucide_icons.dart`**
-
-```sh
-dart run tool/generate_fonts.dart assets/lucide.css
-```
-
-The generator parses the CSS file for `.icon-<name>::before { content: "\<hex>"; }` rules and
-produces the corresponding Dart constants automatically.
-
-#### Optional: embed SVG previews in dartdoc
-
-Pass `--inline-svg` to embed each icon's SVG as a base64 data URI in its `///` doc comment.
-This enables inline icon previews in the IDE when hovering over a `LucideIcons.*` constant.
-
-```sh
-# Use SVGs from the local npm install (fastest)
+# 3. Regenerate lib/lucide_icons.dart with inline SVG dartdoc previews
 dart run tool/generate_fonts.dart assets/lucide.css \
   --inline-svg \
-  --svg-dir=node_modules/lucide-static/icons
-
-# Fall back to fetching SVGs remotely if the local directory is absent
-dart run tool/generate_fonts.dart assets/lucide.css --inline-svg
+  --svg-dir=./node_modules/lucide-static/icons
 ```
+
+The generator parses the CSS file for `.icon-<name>::before { content: "\<hex>"; }`
+rules and produces the corresponding Dart constants. The `--inline-svg` flag embeds
+each icon's SVG as a base64 data URI in its `///` doc comment, enabling inline
+previews in the IDE when hovering over a `LucideIcons.*` constant (omit it, or drop
+`--svg-dir` to fetch SVGs remotely, if you don't need previews).
+
+</details>
