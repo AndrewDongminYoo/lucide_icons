@@ -1,12 +1,14 @@
 name: Update Lucide icons
 
-# New lucide-static releases are detected by Dependabot (.github/dependabot.yml),
-# which opens a dependency-bump PR as a notification. This workflow performs the
-# actual icon regeneration and is run on demand — typically after seeing that
-# Dependabot PR. When a newer version than the one in pubspec.yaml is found, the
-# icon set is regenerated and a PR is opened.
+# New lucide-static releases are detected by Dependabot (.github/dependabot.yml)
+# as a human-visible notification, but this workflow no longer needs it: the
+# daily schedule self-checks `npm view lucide-static version` against
+# pubspec.yaml and no-ops when already current. When a newer version is found,
+# the icon set is regenerated and a PR is opened. Still dispatchable on demand.
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * *" # daily 06:00 UTC
 
 permissions:
   contents: write
