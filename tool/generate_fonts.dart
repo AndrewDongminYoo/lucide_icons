@@ -5,11 +5,9 @@ import 'dart:io';
 
 const _fallbackLucideStaticVersion = '0.575.0';
 const _requestTimeout = Duration(seconds: 12);
-const _defaultSvgDir = './node_modules/lucide-static/icons';
-const _lucideStaticPackageJson = './node_modules/lucide-static/package.json';
 
-String _resolveLucideStaticVersion() {
-  final packageJson = File(_lucideStaticPackageJson);
+String _resolvePackageVersion(String packageJsonPath, String fallbackVersion) {
+  final packageJson = File(packageJsonPath);
   if (packageJson.existsSync()) {
     final decoded = jsonDecode(packageJson.readAsStringSync()) as Map<String, dynamic>;
     final version = decoded['version'];
@@ -17,7 +15,19 @@ String _resolveLucideStaticVersion() {
       return version;
     }
   }
-  return _fallbackLucideStaticVersion;
+  return fallbackVersion;
+}
+
+String _flagValue(List<String> args, String name, String fallback) {
+  final prefix = '--$name=';
+  var value = fallback;
+  for (final arg in args) {
+    if (arg.startsWith(prefix)) {
+      final parsed = arg.substring(prefix.length);
+      if (parsed.isNotEmpty) value = parsed;
+    }
+  }
+  return value;
 }
 
 String _toCamelCase(String name) {
@@ -56,6 +66,7 @@ Future<String?> _loadSvgDataUri(
   String name,
   List<String> svgDirs,
   String baseUrl,
+  bool includeGithubFallback,
 ) async {
   final localSvgFile = _findLocalSvgFile(name, svgDirs);
   if (localSvgFile != null) {
@@ -65,7 +76,8 @@ Future<String?> _loadSvgDataUri(
 
   final urls = <String>[
     '$baseUrl/$name.svg',
-    'https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/$name.svg',
+    if (includeGithubFallback)
+      'https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/$name.svg',
   ];
 
   for (final url in urls) {
@@ -98,6 +110,7 @@ Future<Map<String, String>> _buildSvgDataUriMap(
   List<String> names,
   List<String> svgDirs,
   String baseUrl,
+  bool includeGithubFallback,
 ) async {
   final client = HttpClient();
   client.connectionTimeout = _requestTimeout;
@@ -113,7 +126,13 @@ Future<Map<String, String>> _buildSvgDataUriMap(
 
       final fetched = await Future.wait(
         batch.map((name) async {
-          final dataUri = await _loadSvgDataUri(client, name, svgDirs, baseUrl);
+          final dataUri = await _loadSvgDataUri(
+            client,
+            name,
+            svgDirs,
+            baseUrl,
+            includeGithubFallback,
+          );
           return (name: name, dataUri: dataUri);
         }),
       );
@@ -138,12 +157,35 @@ Future<Map<String, String>> _buildSvgDataUriMap(
   return result;
 }
 
+const _usage =
+    'Usage: dart run tool/generate_fonts.dart <path-to-css> [--inline-svg] '
+    '[--svg-dir=path] [--npm-package=name] [--font-family=name] '
+    '[--font-package=name] [--class-name=name] [--css-prefix=prefix] '
+    '[--docs-url=url] [--output=path]';
+
+const _knownFlagPrefixes = <String>[
+  '--svg-dir=',
+  '--npm-package=',
+  '--font-family=',
+  '--font-package=',
+  '--class-name=',
+  '--css-prefix=',
+  '--docs-url=',
+  '--output=',
+];
+
 Future<void> main(List<String> args) async {
   if (args.isEmpty) {
-    print(
-      'Usage: dart run tool/generate_fonts.dart <path-to-css> [--inline-svg] [--svg-dir=path]',
-    );
+    print(_usage);
     exit(1);
+  }
+
+  for (final arg in args) {
+    if (arg == '--inline-svg') continue;
+    if (arg.startsWith('--') && !_knownFlagPrefixes.any(arg.startsWith)) {
+      print('Unknown flag: $arg\n\n$_usage');
+      exit(1);
+    }
   }
 
   final inlineSvg = args.contains('--inline-svg');
@@ -152,11 +194,27 @@ Future<void> main(List<String> args) async {
       .map((arg) => arg.substring('--svg-dir='.length))
       .where((arg) => arg.isNotEmpty)
       .toList();
-  final svgDirs = svgDirArgs.isEmpty ? <String>[_defaultSvgDir] : svgDirArgs;
-  final lucideVersion = _resolveLucideStaticVersion();
-  final lucideBaseUrl = 'https://unpkg.com/lucide-static@$lucideVersion/icons';
+
+  final npmPackage = _flagValue(args, 'npm-package', 'lucide-static');
+  final isLucideStatic = npmPackage == 'lucide-static';
+  final fontFamily = _flagValue(args, 'font-family', 'Lucide');
+  final fontPackage = _flagValue(args, 'font-package', 'lucide_icons');
+  final className = _flagValue(args, 'class-name', 'LucideIcons');
+  final cssPrefix = _flagValue(args, 'css-prefix', 'icon-');
+  final docsUrl = _flagValue(args, 'docs-url', 'https://lucide.dev/icons/');
+  final outputPath = _flagValue(args, 'output', './lib/lucide_icons.dart');
+
+  final defaultSvgDir = './node_modules/$npmPackage/icons';
+  final svgDirs = svgDirArgs.isEmpty ? <String>[defaultSvgDir] : svgDirArgs;
+
+  final fallbackVersion = isLucideStatic ? _fallbackLucideStaticVersion : 'latest';
+  final npmVersion = _resolvePackageVersion(
+    './node_modules/$npmPackage/package.json',
+    fallbackVersion,
+  );
+  final iconBaseUrl = 'https://unpkg.com/$npmPackage@$npmVersion/icons';
   final cssPath = args.firstWhere(
-    (arg) => !arg.startsWith('--svg-dir=') && arg != '--inline-svg',
+    (arg) => !arg.startsWith('--'),
     orElse: () => '',
   );
 
@@ -174,7 +232,8 @@ Future<void> main(List<String> args) async {
 
   final content = cssFile.readAsStringSync();
   final pattern = RegExp(
-    r'\.icon-([^:]+)::before\s*\{\s*content:\s*"\\([0-9a-fA-F]+)";\s*\}',
+    '\\.${RegExp.escape(cssPrefix)}'
+    r'([^:]+)::before\s*\{\s*content:\s*"\\([0-9a-fA-F]+)";\s*\}',
   );
   final matches = pattern.allMatches(content);
   final names = matches.map((match) => match.group(1)!).toList();
@@ -188,13 +247,15 @@ Future<void> main(List<String> args) async {
       print('Using local SVG directories first: ${existingSvgDirs.join(', ')}');
     }
   }
-  final svgDataUris = inlineSvg ? await _buildSvgDataUriMap(names, svgDirs, lucideBaseUrl) : <String, String>{};
+  final svgDataUris = inlineSvg
+      ? await _buildSvgDataUriMap(names, svgDirs, iconBaseUrl, isLucideStatic)
+      : <String, String>{};
 
   final generatedOutput = <String>[
     '// 🐦 Flutter imports:\n',
     "import 'package:flutter/widgets.dart';\n\n",
     '// THIS FILE IS AUTOMATICALLY GENERATED!\n\n',
-    'class LucideIcons {',
+    'class $className {',
   ];
 
   final seenNames = <String>{};
@@ -209,22 +270,22 @@ Future<void> main(List<String> args) async {
     final inlinePreview = svgDataUris[name];
     if (inlinePreview != null) {
       generatedOutput.add(
-        '\n  /// [![]($inlinePreview)](https://lucide.dev/icons/$name)\n',
+        '\n  /// [![]($inlinePreview)]($docsUrl$name)\n',
       );
     } else {
       generatedOutput.add(
-        '\n  /// [![]($lucideBaseUrl/$name.svg)](https://lucide.dev/icons/$name)\n',
+        '\n  /// [![]($iconBaseUrl/$name.svg)]($docsUrl$name)\n',
       );
     }
-    generatedOutput.add('  /// Lucide icon named "$readableName".\n');
+    generatedOutput.add('  /// $fontFamily icon named "$readableName".\n');
     generatedOutput.add(
-      "  static const IconData $camelName = IconData(0x$hex, fontFamily: 'Lucide', fontPackage: 'lucide_icons');\n",
+      "  static const IconData $camelName = IconData(0x$hex, fontFamily: '$fontFamily', fontPackage: '$fontPackage');\n",
     );
   }
 
   generatedOutput.add('}\n');
 
-  final output = File('./lib/lucide_icons.dart');
+  final output = File(outputPath);
   output.writeAsStringSync(generatedOutput.join());
   print('Generated ${matches.length} icons at ${output.path}');
 }
