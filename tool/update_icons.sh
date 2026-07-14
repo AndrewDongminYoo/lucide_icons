@@ -27,3 +27,8 @@ cp node_modules/lucide-static/font/lucide.ttf assets/lucide.ttf
 dart run tool/generate_fonts.dart assets/lucide.css \
 	--inline-svg \
 	--svg-dir=./node_modules/lucide-static/icons
+
+# 4. Format so the committed file honours analysis_options.yaml page_width (80).
+#    The generator emits unwrapped lines; without this the diff is noisy and
+#    long-line lints trip. Keeps merry and CI regeneration byte-identical.
+dart format lib/lucide_icons.dart
