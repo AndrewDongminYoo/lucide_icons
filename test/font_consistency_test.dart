@@ -106,6 +106,15 @@ void main() {
           '${missingFromCss.map((cp) => '0x${cp.toRadixString(16)}')}',
     );
 
+    final missingFromDart = cssCodepoints.difference(dartCodepoints);
+    expect(
+      missingFromDart,
+      isEmpty,
+      reason:
+          'CSS codepoints missing from the generated LucideIcons class: '
+          '${missingFromDart.map((cp) => '0x${cp.toRadixString(16)}')}',
+    );
+
     final missingFromFont = cssCodepoints.difference(fontCodepoints);
     expect(
       missingFromFont,
