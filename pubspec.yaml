@@ -1,12 +1,12 @@
 name: lucide_icons
 description: A Lucide icon library package for Flutter applications. Fork of Feather Icons, open for anyone to contribute icons.
-version: 0.0.1
+version: 1.24.0
 homepage: https://lucide.dev
-repository: https://github.com/lucide-icons/lucide
+repository: https://github.com/AndrewDongminYoo/lucide_icons
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
-  flutter: ">=1.17.0"
+  sdk: ">=3.8.0 <4.0.0"
+  flutter: ">=3.24.0"
 
 dependencies:
   flutter:
@@ -15,12 +15,21 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  html: ^0.15.0
-  recase: ^4.0.0
-  lint: ^1.5.3
+  import_sorter: ^4.6.0
+  merry: ^2.1.1
+  very_good_analysis: ^10.2.0
+
+scripts:
+  update-icons:
+    (description): Upgrade lucide-static, copy font assets, and regenerate lib/lucide_icons.dart.
+    (scripts):
+      - bash tool/update_icons.sh
 
 flutter:
   fonts:
     - family: Lucide
       fonts:
         - asset: assets/lucide.ttf
+
+import_sorter:
+  emojis: true
