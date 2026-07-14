@@ -1,0 +1,8 @@
+# Keep the published package lean: ship only what a consumer needs
+# (lib/, assets/lucide.ttf, pubspec, README, CHANGELOG, LICENSE, example/).
+# Everything below is generation input or maintainer tooling.
+assets/lucide.css
+tool/
+.github/
+docs/
+package.json

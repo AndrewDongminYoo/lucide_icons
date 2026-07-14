@@ -33,7 +33,7 @@ The pipeline is ~90% there. Two gaps block "fully automated".
 2. **`README.md` version pin drifts.** The install snippet pins a `ref: vX.Y.Z` git tag; neither `update-icons.yml` nor `update_icons.sh` touches it, so every automated PR would ship a stale README. Sync it in the same step that bumps `pubspec.yaml`.
 3. **The generator output was not formatted.** `tool/update_icons.sh` ran the generator but not `dart format`; the raw output is single-line and violates `analysis_options.yaml` `page_width: 80`.
    Left unformatted, the committed-vs- committed diff is all-lines-changed, which _also_ breaks the changelog's `+`/`-` extraction (it would list every icon as added).
-   **Fixed** — step 4 (`dart format lib/lucide_icons.dart`) added to `update_icons.sh`, so both `merry` and CI now produce identical, formatted output.
+   **Fixed** — step 4 (`dart format lib/lucide_icons_lite.dart`) added to `update_icons.sh`, so both `merry` and CI now produce identical, formatted output.
 
 ## Proposed design (full automation)
 
@@ -62,7 +62,7 @@ Recommended gates, cheapest first:
 Sketch of the removal guard (runs against the regenerated file before commit):
 
 ```bash
-removed="$(git diff -- lib/lucide_icons.dart \
+removed="$(git diff -- lib/lucide_icons_lite.dart \
   | grep -E '^-[[:space:]]+static const IconData' \
   | sed -E 's/.*IconData[[:space:]]+([A-Za-z0-9]+).*/\1/' | sort -u)"
 if [ -n "$removed" ]; then

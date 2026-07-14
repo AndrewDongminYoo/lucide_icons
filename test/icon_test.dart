@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 // 🌎 Project imports:
-import 'package:lucide_icons/lucide_icons.dart';
+import 'package:lucide_icons_lite/lucide_icons_lite.dart';
 
 void main() {
   testWidgets('Can set opacity for an Icon', (WidgetTester tester) async {

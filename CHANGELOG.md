@@ -2,6 +2,13 @@
 
 ## 1.24.0 - 2026-07-14
 
+### Changed
+
+- Published to pub.dev as `lucide_icons_lite`, a lightweight, single-weight
+  distribution of the Lucide icon set. The library entry point is now
+  `package:lucide_icons_lite/lucide_icons_lite.dart`; the `LucideIcons` API is
+  unchanged.
+
 ### Added
 
 - Updated icon set to lucide-static@1.24.0 (1,991 unique icons, up from 1,958).

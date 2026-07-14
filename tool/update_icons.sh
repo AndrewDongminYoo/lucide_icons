@@ -23,7 +23,7 @@ pnpm add "lucide-static@${version_spec}"
 cp node_modules/lucide-static/font/lucide.css assets/lucide.css
 cp node_modules/lucide-static/font/lucide.ttf assets/lucide.ttf
 
-# 3. Regenerate lib/lucide_icons.dart with inline SVG dartdoc previews.
+# 3. Regenerate lib/lucide_icons_lite.dart with inline SVG dartdoc previews.
 dart run tool/generate_fonts.dart assets/lucide.css \
 	--inline-svg \
 	--svg-dir=./node_modules/lucide-static/icons
@@ -31,4 +31,4 @@ dart run tool/generate_fonts.dart assets/lucide.css \
 # 4. Format so the committed file honours analysis_options.yaml page_width (80).
 #    The generator emits unwrapped lines; without this the diff is noisy and
 #    long-line lints trip. Keeps merry and CI regeneration byte-identical.
-dart format lib/lucide_icons.dart
+dart format lib/lucide_icons_lite.dart

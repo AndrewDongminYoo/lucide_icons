@@ -218,13 +218,13 @@ Future<void> main(List<String> args) async {
     }
     generatedOutput.add('  /// Lucide icon named "$readableName".\n');
     generatedOutput.add(
-      "  static const IconData $camelName = IconData(0x$hex, fontFamily: 'Lucide', fontPackage: 'lucide_icons');\n",
+      "  static const IconData $camelName = IconData(0x$hex, fontFamily: 'Lucide', fontPackage: 'lucide_icons_lite');\n",
     );
   }
 
   generatedOutput.add('}\n');
 
-  final output = File('./lib/lucide_icons.dart');
+  final output = File('./lib/lucide_icons_lite.dart');
   output.writeAsStringSync(generatedOutput.join());
   print('Generated ${matches.length} icons at ${output.path}');
 }
