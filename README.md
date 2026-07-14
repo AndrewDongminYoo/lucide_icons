@@ -16,7 +16,7 @@ dependencies:
   lucide_icons:
     git:
       url: https://github.com/AndrewDongminYoo/lucide_icons
-      ref: v1.17.0 # any tag, branch, or commit SHA
+      ref: v1.24.0 # any tag, branch, or commit SHA
 ```
 
 Then run `flutter pub get`. Release tags follow the upstream `lucide-static`

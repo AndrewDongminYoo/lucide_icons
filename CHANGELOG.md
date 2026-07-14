@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.24.0 - 2026-07-14
+
+### Added
+
+- Updated icon set to lucide-static@1.24.0 (1,991 unique icons, up from 1,958).
+- New icons: `ad`, `banknoteCheck`, `boneFracture`, `circleEuroSign`, `clockArrowLeft`, `clockArrowRight`, `databaseArrowDown`, `databaseArrowUp`, `databaseCheck`, `databaseMinus`, `databasePlus`, `databaseX`, `eyeDashed`, `listSortAscending`, `listSortDescending`, `paperBag`, `pencilSparkles`, `phi`, `playOff`, `podium`, `saveCheck`, `savePen`, `savePlus`, `starCheck`, `starMinus`, `starPlus`, `starX`, `summary`, `tagPlus`, `tagX`, `userRoundArrowLeft`, `webcamOff`, `wrenchOff`.
+
 ## 1.17.0 - 2026-06-06
 
 ### Added
