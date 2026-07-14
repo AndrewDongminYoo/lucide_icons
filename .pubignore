@@ -6,3 +6,9 @@ tool/
 .github/
 docs/
 package.json
+
+# A root .pubignore replaces .gitignore for publishing (not a union), so
+# re-exclude the generated dirs pnpm/flutter create in the repo root — else
+# `tool/update_icons.sh`'s `pnpm add` sweeps node_modules/ into the tarball.
+node_modules/
+build/
