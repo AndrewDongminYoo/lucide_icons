@@ -29,6 +29,9 @@ jobs:
         run: |
           latest="$(npm view lucide-static version)"
           current="$(grep -E '^version:' pubspec.yaml | awk '{print $2}')"
+          # A package-side hotfix (e.g. 1.24.0+1) still tracks the same upstream
+          # release; strip the build number so it doesn't reopen the update PR daily.
+          current="${current%%+*}"
           echo "latest=$latest" >> "$GITHUB_OUTPUT"
           echo "current=$current" >> "$GITHUB_OUTPUT"
           if [ "$latest" = "$current" ]; then
