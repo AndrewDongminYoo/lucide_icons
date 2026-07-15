@@ -9,7 +9,8 @@ const _requestTimeout = Duration(seconds: 12);
 String _resolvePackageVersion(String packageJsonPath, String fallbackVersion) {
   final packageJson = File(packageJsonPath);
   if (packageJson.existsSync()) {
-    final decoded = jsonDecode(packageJson.readAsStringSync()) as Map<String, dynamic>;
+    final decoded =
+        jsonDecode(packageJson.readAsStringSync()) as Map<String, dynamic>;
     final version = decoded['version'];
     if (version is String && version.isNotEmpty) {
       return version;
@@ -31,11 +32,21 @@ String _flagValue(List<String> args, String name, String fallback) {
 }
 
 String _toCamelCase(String name) {
-  final parts = name.split('-');
-  return parts.first + parts.skip(1).map((p) => p[0].toUpperCase() + p.substring(1)).join();
+  // Icon sets differ in word separators (- vs _) and letter case
+  // (MingCute has names like ABS_fill); normalize to lowerCamelCase.
+  final parts = name.split(RegExp('[-_]')).where((p) => p.isNotEmpty).toList();
+  final camel =
+      parts.first.toLowerCase() +
+      parts
+          .skip(1)
+          .map((p) => p[0].toUpperCase() + p.substring(1).toLowerCase())
+          .join();
+  // Dart identifiers cannot start with a digit (Bootstrap Icons has names
+  // like "1-circle"); prefix those.
+  return camel.startsWith(RegExp('[0-9]')) ? 'icon$camel' : camel;
 }
 
-String _toReadableName(String name) => name.replaceAll('-', ' ');
+String _toReadableName(String name) => name.replaceAll(RegExp('[-_]'), ' ');
 
 String _normalizeDirPath(String path) {
   if (path.endsWith('/')) {
@@ -47,9 +58,13 @@ String _normalizeDirPath(String path) {
 File? _findLocalSvgFile(String name, List<String> svgDirs) {
   for (final dir in svgDirs) {
     final normalizedDir = _normalizeDirPath(dir);
-    final file = File('$normalizedDir/$name.svg');
-    if (file.existsSync()) {
-      return file;
+    // Some sets mix letter case between CSS names and SVG filenames
+    // (MingCute: .mgc_TV_tower_fill vs tv_tower_fill.svg).
+    for (final candidate in {name, name.toLowerCase()}) {
+      final file = File('$normalizedDir/$candidate.svg');
+      if (file.existsSync()) {
+        return file;
+      }
     }
   }
   return null;
@@ -66,7 +81,7 @@ Future<String?> _loadSvgDataUri(
   String name,
   List<String> svgDirs,
   String baseUrl,
-  bool includeGithubFallback,
+  String fallbackUrl,
 ) async {
   final localSvgFile = _findLocalSvgFile(name, svgDirs);
   if (localSvgFile != null) {
@@ -76,13 +91,14 @@ Future<String?> _loadSvgDataUri(
 
   final urls = <String>[
     '$baseUrl/$name.svg',
-    if (includeGithubFallback)
-      'https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/$name.svg',
+    if (fallbackUrl.isNotEmpty) '$fallbackUrl/$name.svg',
   ];
 
   for (final url in urls) {
     try {
-      final request = await client.getUrl(Uri.parse(url)).timeout(_requestTimeout);
+      final request = await client
+          .getUrl(Uri.parse(url))
+          .timeout(_requestTimeout);
       final response = await request.close().timeout(_requestTimeout);
 
       if (response.statusCode != HttpStatus.ok) {
@@ -110,7 +126,7 @@ Future<Map<String, String>> _buildSvgDataUriMap(
   List<String> names,
   List<String> svgDirs,
   String baseUrl,
-  bool includeGithubFallback,
+  String fallbackUrl,
 ) async {
   final client = HttpClient();
   client.connectionTimeout = _requestTimeout;
@@ -131,7 +147,7 @@ Future<Map<String, String>> _buildSvgDataUriMap(
             name,
             svgDirs,
             baseUrl,
-            includeGithubFallback,
+            fallbackUrl,
           );
           return (name: name, dataUri: dataUri);
         }),
@@ -161,7 +177,7 @@ const _usage =
     'Usage: dart run tool/generate_fonts.dart <path-to-css> [--inline-svg] '
     '[--svg-dir=path] [--npm-package=name] [--font-family=name] '
     '[--font-package=name] [--class-name=name] [--css-prefix=prefix] '
-    '[--docs-url=url] [--output=path]';
+    '[--docs-url=url] [--output=path] [--svg-fallback-url=url]';
 
 const _knownFlagPrefixes = <String>[
   '--svg-dir=',
@@ -172,6 +188,7 @@ const _knownFlagPrefixes = <String>[
   '--css-prefix=',
   '--docs-url=',
   '--output=',
+  '--svg-fallback-url=',
 ];
 
 Future<void> main(List<String> args) async {
@@ -207,38 +224,57 @@ Future<void> main(List<String> args) async {
   final defaultSvgDir = './node_modules/$npmPackage/icons';
   final svgDirs = svgDirArgs.isEmpty ? <String>[defaultSvgDir] : svgDirArgs;
 
-  final fallbackVersion = isLucideStatic ? _fallbackLucideStaticVersion : 'latest';
+  final fallbackVersion = isLucideStatic
+      ? _fallbackLucideStaticVersion
+      : 'latest';
   final npmVersion = _resolvePackageVersion(
     './node_modules/$npmPackage/package.json',
     fallbackVersion,
   );
   final iconBaseUrl = 'https://unpkg.com/$npmPackage@$npmVersion/icons';
+  // Per-icon SVG URL tried when both the local dirs and the unpkg base URL
+  // miss (some sets, e.g. Codicons, only publish per-icon SVGs on GitHub).
+  final svgFallbackUrl = _flagValue(
+    args,
+    'svg-fallback-url',
+    isLucideStatic
+        ? 'https://raw.githubusercontent.com/lucide-icons/lucide/main/icons'
+        : '',
+  );
   final cssPath = args.firstWhere(
     (arg) => !arg.startsWith('--'),
     orElse: () => '',
   );
 
   if (cssPath.isEmpty) {
-    print('lucide.css path not provided');
+    print('CSS path not provided');
     exit(1);
   }
 
   final cssFile = File(cssPath);
 
   if (!cssFile.existsSync()) {
-    print('lucide.css file not found');
+    print('CSS file not found: $cssPath');
     exit(1);
   }
 
   final content = cssFile.readAsStringSync();
+  // :{1,2} — lucide uses ::before, MingCute :before. The semicolon after
+  // content is optional (Codicons omits it) and [^}]* tolerates extra
+  // declarations after content (MingCute adds color:). The name group
+  // excludes whitespace so multi-part descendant rules like
+  // ".mgc_loading_3_fill .path1:before" are skipped — an IconData can only
+  // hold a single codepoint, not stacked glyph layers.
   final pattern = RegExp(
     '\\.${RegExp.escape(cssPrefix)}'
-    r'([^:]+)::before\s*\{\s*content:\s*"\\([0-9a-fA-F]+)";\s*\}',
+    r'([^:\s]+):{1,2}before\s*\{\s*content:\s*"\\([0-9a-fA-F]+)";?[^}]*\}',
   );
   final matches = pattern.allMatches(content);
   final names = matches.map((match) => match.group(1)!).toList();
   if (inlineSvg) {
-    final existingSvgDirs = svgDirs.where((dir) => Directory(dir).existsSync()).toList();
+    final existingSvgDirs = svgDirs
+        .where((dir) => Directory(dir).existsSync())
+        .toList();
     if (existingSvgDirs.isEmpty) {
       print(
         'No local SVG directory found. Falling back to remote SVG sources.',
@@ -248,7 +284,7 @@ Future<void> main(List<String> args) async {
     }
   }
   final svgDataUris = inlineSvg
-      ? await _buildSvgDataUriMap(names, svgDirs, iconBaseUrl, isLucideStatic)
+      ? await _buildSvgDataUriMap(names, svgDirs, iconBaseUrl, svgFallbackUrl)
       : <String, String>{};
 
   final generatedOutput = <String>[
