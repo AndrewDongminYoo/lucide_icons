@@ -6,12 +6,12 @@ import 'dart:typed_data';
 import 'package:flutter_test/flutter_test.dart';
 
 /// Extracts codepoints from `assets/lucide.css` using the same regex the
-/// generator (`tool/generate_fonts.dart` line 176-178) uses to build the
-/// Dart icon constants.
+/// generator (`tool/generate_fonts.dart`) uses to build the Dart icon
+/// constants — keep the two in sync.
 Set<int> _cssCodepoints() {
   final content = File('assets/lucide.css').readAsStringSync();
   final pattern = RegExp(
-    r'\.icon-([^:]+)::before\s*\{\s*content:\s*"\\([0-9a-fA-F]+)";\s*\}',
+    r'\.icon-([^:\s]+):{1,2}before\s*\{\s*content:\s*"\\([0-9a-fA-F]+)";[^}]*\}',
   );
   return pattern
       .allMatches(content)
