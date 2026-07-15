@@ -259,14 +259,15 @@ Future<void> main(List<String> args) async {
   }
 
   final content = cssFile.readAsStringSync();
-  // :{1,2} — lucide uses ::before, MingCute :before. [^}]* tolerates extra
+  // :{1,2} — lucide uses ::before, MingCute :before. The semicolon after
+  // content is optional (Codicons omits it) and [^}]* tolerates extra
   // declarations after content (MingCute adds color:). The name group
   // excludes whitespace so multi-part descendant rules like
   // ".mgc_loading_3_fill .path1:before" are skipped — an IconData can only
   // hold a single codepoint, not stacked glyph layers.
   final pattern = RegExp(
     '\\.${RegExp.escape(cssPrefix)}'
-    r'([^:\s]+):{1,2}before\s*\{\s*content:\s*"\\([0-9a-fA-F]+)";[^}]*\}',
+    r'([^:\s]+):{1,2}before\s*\{\s*content:\s*"\\([0-9a-fA-F]+)";?[^}]*\}',
   );
   final matches = pattern.allMatches(content);
   final names = matches.map((match) => match.group(1)!).toList();
