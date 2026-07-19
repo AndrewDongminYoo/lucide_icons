@@ -32,3 +32,9 @@ dart run tool/generate_fonts.dart assets/lucide.css \
 #    The generator emits unwrapped lines; without this the diff is noisy and
 #    long-line lints trip. Keeps merry and CI regeneration byte-identical.
 dart format lib/lucide_icons.dart
+
+# 5. Format the CSS with the prettier version trunk pins (.trunk/trunk.yaml) so
+#    the committed asset matches what trunk-fmt-pre-commit produces locally.
+#    Upstream ships it unformatted, so without this the CI-opened PR shows the
+#    whole file as rewritten. Runs last so step 3 still parses raw upstream CSS.
+pnpm dlx prettier@3.8.3 --write assets/lucide.css
