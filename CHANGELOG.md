@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.25.0 - 2026-07-19
+
+### Added
+
+- Updated icon set to lucide-static@1.25.0.
+- New icons: `circleEuro`, `scanBox`, `serverPlus`.
+
+### Removed
+
+- Removed icons: `circleEuroSign`.
+
 ## 1.24.0 - 2026-07-14
 
 ### Added

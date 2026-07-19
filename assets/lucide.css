@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1783603539453"); /* IE9*/
+  src: url("lucide.eot?t=1784276953700"); /* IE9*/
   src:
-    url("lucide.eot?t=1783603539453#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1784276953700#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1783603539453") format("woff2"),
-    url("lucide.woff?t=1783603539453") format("woff"),
-    url("lucide.ttf?t=1783603539453") format("truetype"),
-    url("lucide.svg?t=1783603539453") format("svg");
+    url("lucide.woff2?t=1784276953700") format("woff2"),
+    url("lucide.woff?t=1784276953700") format("woff"),
+    url("lucide.ttf?t=1784276953700") format("truetype"),
+    url("lucide.svg?t=1784276953700") format("svg");
 }
 
 [class^="icon-"],
@@ -1357,8 +1357,8 @@
 .icon-circle-equal::before {
   content: "\e400";
 }
-.icon-circle-euro-sign::before {
-  content: "\e71e";
+.icon-circle-euro::before {
+  content: "\e71f";
 }
 .icon-circle-fading-arrow-up::before {
   content: "\e618";
@@ -4498,6 +4498,9 @@
 .icon-scan-barcode::before {
   content: "\e535";
 }
+.icon-scan-box::before {
+  content: "\e720";
+}
 .icon-scan-eye::before {
   content: "\e536";
 }
@@ -4605,6 +4608,9 @@
 }
 .icon-server-off::before {
   content: "\e1ea";
+}
+.icon-server-plus::before {
+  content: "\e721";
 }
 .icon-server::before {
   content: "\e153";
