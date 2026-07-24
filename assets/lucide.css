@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1784276953700"); /* IE9*/
+  src: url("lucide.eot?t=1784787263747"); /* IE9*/
   src:
-    url("lucide.eot?t=1784276953700#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1784787263747#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1784276953700") format("woff2"),
-    url("lucide.woff?t=1784276953700") format("woff"),
-    url("lucide.ttf?t=1784276953700") format("truetype"),
-    url("lucide.svg?t=1784276953700") format("svg");
+    url("lucide.woff2?t=1784787263747") format("woff2"),
+    url("lucide.woff?t=1784787263747") format("woff"),
+    url("lucide.ttf?t=1784787263747") format("truetype"),
+    url("lucide.svg?t=1784787263747") format("svg");
 }
 
 [class^="icon-"],
@@ -4662,6 +4662,9 @@
 }
 .icon-shield-half::before {
   content: "\e517";
+}
+.icon-shield-keyhole::before {
+  content: "\e722";
 }
 .icon-shield-minus::before {
   content: "\e518";
