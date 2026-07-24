@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.26.0 - 2026-07-24
+
+### Added
+
+- Updated icon set to lucide-static@1.26.0.
+- New icons: `shieldKeyhole`.
+
 ## 1.25.0 - 2026-07-19
 
 ### Added
