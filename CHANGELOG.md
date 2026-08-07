@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.28.0 - 2026-08-07
+
+### Added
+
+- Updated icon set to lucide-static@1.28.0.
+- New icons: `layoutFreeform`, `micAudioLines`, `micSignal`, `mosque`, `rotateCcwClock`, `rotateCwFadingClock`, `scanSquare`, `squareOff`, `userShield`.
+
 ## 1.26.0 - 2026-07-25
 
 ### Added

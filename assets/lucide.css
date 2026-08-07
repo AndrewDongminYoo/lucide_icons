@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1784787263747"); /* IE9*/
+  src: url("lucide.eot?t=1785398042262"); /* IE9*/
   src:
-    url("lucide.eot?t=1784787263747#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1785398042262#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1784787263747") format("woff2"),
-    url("lucide.woff?t=1784787263747") format("woff"),
-    url("lucide.ttf?t=1784787263747") format("truetype"),
-    url("lucide.svg?t=1784787263747") format("svg");
+    url("lucide.woff2?t=1785398042262") format("woff2"),
+    url("lucide.woff?t=1785398042262") format("woff"),
+    url("lucide.ttf?t=1785398042262") format("truetype"),
+    url("lucide.svg?t=1785398042262") format("svg");
 }
 
 [class^="icon-"],
@@ -3115,6 +3115,9 @@
 .icon-layout-dashboard::before {
   content: "\e1c1";
 }
+.icon-layout-freeform::before {
+  content: "\e723";
+}
 .icon-layout-grid::before {
   content: "\e0ff";
 }
@@ -3544,8 +3547,14 @@
 .icon-mic-2::before {
   content: "\e349";
 }
+.icon-mic-audio-lines::before {
+  content: "\e724";
+}
 .icon-mic-off::before {
   content: "\e119";
+}
+.icon-mic-signal::before {
+  content: "\e1fa";
 }
 .icon-mic-vocal::before {
   content: "\e349";
@@ -3645,6 +3654,9 @@
 }
 .icon-more-vertical::before {
   content: "\e0b7";
+}
+.icon-mosque::before {
+  content: "\e725";
 }
 .icon-motorbike::before {
   content: "\e698";
@@ -4399,6 +4411,9 @@
 .icon-rotate-3d::before {
   content: "\e2ea";
 }
+.icon-rotate-ccw-clock::before {
+  content: "\e1f5";
+}
 .icon-rotate-ccw-key::before {
   content: "\e650";
 }
@@ -4407,6 +4422,9 @@
 }
 .icon-rotate-ccw::before {
   content: "\e148";
+}
+.icon-rotate-cw-fading-clock::before {
+  content: "\e726";
 }
 .icon-rotate-cw-square::before {
   content: "\e5d1";
@@ -4518,6 +4536,9 @@
 }
 .icon-scan-search::before {
   content: "\e537";
+}
+.icon-scan-square::before {
+  content: "\e727";
 }
 .icon-scan-text::before {
   content: "\e538";
@@ -5025,6 +5046,9 @@
 }
 .icon-square-mouse-pointer::before {
   content: "\e202";
+}
+.icon-square-off::before {
+  content: "\e728";
 }
 .icon-square-parking-off::before {
   content: "\e3cc";
@@ -5709,6 +5733,9 @@
 }
 .icon-user-search::before {
   content: "\e579";
+}
+.icon-user-shield::before {
+  content: "\e729";
 }
 .icon-user-square-2::before {
   content: "\e466";
