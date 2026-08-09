@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.30.0 - 2026-08-09
+
+### Added
+
+- Updated icon set to lucide-static@1.30.0.
+- New icons: `audioLinesX`, `broom`, `broomSparkles`, `faceAngry`, `faceExpressionless`, `faceGrinning`, `faceNeutral`, `faceSlightlyFrowning`, `faceSlightlySmiling`, `faceSlightlySmilingPlus`, `layerArrowDown`, `layerArrowUp`, `layersArrowDown`, `layersArrowUp`, `layoutFreeform`, `micAudioLines`, `micSignal`, `mosque`, `rotateCcwClock`, `rotateCwFadingClock`, `scanSquare`, `shieldLock`, `squareOff`, `userShield`.
+
 ## 1.26.0 - 2026-07-25
 
 ### Added
