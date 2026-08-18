@@ -1,6 +1,6 @@
 {
   "packageManager": "pnpm@11.17.0",
   "dependencies": {
-    "lucide-static": "^1.26.0"
+    "lucide-static": "^1.31.0"
   }
 }

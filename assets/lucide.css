@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1784787263747"); /* IE9*/
+  src: url("lucide.eot?t=1786282913568"); /* IE9*/
   src:
-    url("lucide.eot?t=1784787263747#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1786282913568#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1784787263747") format("woff2"),
-    url("lucide.woff?t=1784787263747") format("woff"),
-    url("lucide.ttf?t=1784787263747") format("truetype"),
-    url("lucide.svg?t=1784787263747") format("svg");
+    url("lucide.woff2?t=1786282913568") format("woff2"),
+    url("lucide.woff?t=1786282913568") format("woff"),
+    url("lucide.ttf?t=1786282913568") format("truetype"),
+    url("lucide.svg?t=1786282913568") format("svg");
 }
 
 [class^="icon-"],
@@ -177,6 +177,9 @@
 }
 .icon-anchor::before {
   content: "\e03f";
+}
+.icon-angle::before {
+  content: "\e732";
 }
 .icon-angry::before {
   content: "\e2fc";
@@ -444,6 +447,9 @@
 }
 .icon-atom::before {
   content: "\e3d7";
+}
+.icon-audio-lines-x::before {
+  content: "\e72e";
 }
 .icon-audio-lines::before {
   content: "\e55a";
@@ -912,6 +918,12 @@
 }
 .icon-broccoli::before {
   content: "\e6f5";
+}
+.icon-broom-sparkles::before {
+  content: "\e72f";
+}
+.icon-broom::before {
+  content: "\e730";
 }
 .icon-brush-cleaning::before {
   content: "\e666";
@@ -2002,6 +2014,9 @@
 .icon-egg::before {
   content: "\e25d";
 }
+.icon-eject::before {
+  content: "\e733";
+}
 .icon-ellipse::before {
   content: "\e6b2";
 }
@@ -2052,6 +2067,27 @@
 }
 .icon-eye::before {
   content: "\e0ba";
+}
+.icon-face-angry::before {
+  content: "\e2fc";
+}
+.icon-face-expressionless::before {
+  content: "\e2fd";
+}
+.icon-face-grinning::before {
+  content: "\e300";
+}
+.icon-face-neutral::before {
+  content: "\e114";
+}
+.icon-face-slightly-frowning::before {
+  content: "\e0db";
+}
+.icon-face-slightly-smiling-plus::before {
+  content: "\e301";
+}
+.icon-face-slightly-smiling::before {
+  content: "\e164";
 }
 .icon-factory::before {
   content: "\e29f";
@@ -3097,11 +3133,23 @@
 .icon-laugh::before {
   content: "\e300";
 }
+.icon-layer-arrow-down::before {
+  content: "\e72a";
+}
+.icon-layer-arrow-up::before {
+  content: "\e72b";
+}
 .icon-layers-2::before {
   content: "\e52a";
 }
 .icon-layers-3::before {
   content: "\e529";
+}
+.icon-layers-arrow-down::before {
+  content: "\e72c";
+}
+.icon-layers-arrow-up::before {
+  content: "\e72d";
 }
 .icon-layers-minus::before {
   content: "\e6ee";
@@ -3114,6 +3162,9 @@
 }
 .icon-layout-dashboard::before {
   content: "\e1c1";
+}
+.icon-layout-freeform::before {
+  content: "\e723";
 }
 .icon-layout-grid::before {
   content: "\e0ff";
@@ -3318,6 +3369,9 @@
 }
 .icon-magnet::before {
   content: "\e2b5";
+}
+.icon-mail-badge::before {
+  content: "\e734";
 }
 .icon-mail-check::before {
   content: "\e361";
@@ -3544,8 +3598,14 @@
 .icon-mic-2::before {
   content: "\e349";
 }
+.icon-mic-audio-lines::before {
+  content: "\e724";
+}
 .icon-mic-off::before {
   content: "\e119";
+}
+.icon-mic-signal::before {
+  content: "\e1fa";
 }
 .icon-mic-vocal::before {
   content: "\e349";
@@ -3645,6 +3705,9 @@
 }
 .icon-more-vertical::before {
   content: "\e0b7";
+}
+.icon-mosque::before {
+  content: "\e725";
 }
 .icon-motorbike::before {
   content: "\e698";
@@ -4399,6 +4462,9 @@
 .icon-rotate-3d::before {
   content: "\e2ea";
 }
+.icon-rotate-ccw-clock::before {
+  content: "\e1f5";
+}
 .icon-rotate-ccw-key::before {
   content: "\e650";
 }
@@ -4407,6 +4473,9 @@
 }
 .icon-rotate-ccw::before {
   content: "\e148";
+}
+.icon-rotate-cw-fading-clock::before {
+  content: "\e726";
 }
 .icon-rotate-cw-square::before {
   content: "\e5d1";
@@ -4518,6 +4587,9 @@
 }
 .icon-scan-search::before {
   content: "\e537";
+}
+.icon-scan-square::before {
+  content: "\e727";
 }
 .icon-scan-text::before {
   content: "\e538";
@@ -4665,6 +4737,9 @@
 }
 .icon-shield-keyhole::before {
   content: "\e722";
+}
+.icon-shield-lock::before {
+  content: "\e731";
 }
 .icon-shield-minus::before {
   content: "\e518";
@@ -5025,6 +5100,9 @@
 }
 .icon-square-mouse-pointer::before {
   content: "\e202";
+}
+.icon-square-off::before {
+  content: "\e728";
 }
 .icon-square-parking-off::before {
   content: "\e3cc";
@@ -5709,6 +5787,9 @@
 }
 .icon-user-search::before {
   content: "\e579";
+}
+.icon-user-shield::before {
+  content: "\e729";
 }
 .icon-user-square-2::before {
   content: "\e466";
