@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1786095668459"); /* IE9*/
+  src: url("lucide.eot?t=1786282913568"); /* IE9*/
   src:
-    url("lucide.eot?t=1786095668459#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1786282913568#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1786095668459") format("woff2"),
-    url("lucide.woff?t=1786095668459") format("woff"),
-    url("lucide.ttf?t=1786095668459") format("truetype"),
-    url("lucide.svg?t=1786095668459") format("svg");
+    url("lucide.woff2?t=1786282913568") format("woff2"),
+    url("lucide.woff?t=1786282913568") format("woff"),
+    url("lucide.ttf?t=1786282913568") format("truetype"),
+    url("lucide.svg?t=1786282913568") format("svg");
 }
 
 [class^="icon-"],
@@ -177,6 +177,9 @@
 }
 .icon-anchor::before {
   content: "\e03f";
+}
+.icon-angle::before {
+  content: "\e732";
 }
 .icon-angry::before {
   content: "\e2fc";
@@ -2011,6 +2014,9 @@
 .icon-egg::before {
   content: "\e25d";
 }
+.icon-eject::before {
+  content: "\e733";
+}
 .icon-ellipse::before {
   content: "\e6b2";
 }
@@ -3363,6 +3369,9 @@
 }
 .icon-magnet::before {
   content: "\e2b5";
+}
+.icon-mail-badge::before {
+  content: "\e734";
 }
 .icon-mail-check::before {
   content: "\e361";
