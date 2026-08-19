@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.31.0 - 2026-08-18
+
+### Added
+
+- Updated icon set to lucide-static@1.31.0.
+- New icons: `angle`, `eject`, `mailBadge`.
+
 ## 1.30.0 - 2026-08-09
 
 ### Added
