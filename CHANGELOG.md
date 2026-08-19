@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.28.0 - 2026-08-07
+
+### Added
+
+- Updated icon set to lucide-static@1.28.0.
+
 ## 1.27.0 - 2026-07-29
 
 ### Added
