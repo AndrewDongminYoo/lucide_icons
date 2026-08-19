@@ -14,6 +14,10 @@ permissions:
   contents: write
   pull-requests: write
 
+concurrency:
+  group: update-lucide-icons
+  cancel-in-progress: true
+
 # Run Node-based actions on Node 24 to silence the Node 20 deprecation notice.
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
@@ -23,6 +27,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          ref: main
 
       - name: Check for a newer lucide-static release
         id: check
@@ -143,11 +149,11 @@ jobs:
         if: steps.check.outputs.changed == 'true'
         run: flutter test
 
-      - name: Open pull request
-        if: steps.check.outputs.changed == 'true'
+      - name: Open or update pull request
         uses: peter-evans/create-pull-request@22a9089034f40e5a961c8808d113e2c98fb63676 # v7.0.11
         with:
-          branch: chore/lucide-static-${{ steps.check.outputs.latest }}
+          base: main
+          branch: chore/update-lucide-icons
           commit-message: "feat(icons): update icon set to lucide-static@${{ steps.check.outputs.latest }}"
           title: "feat(icons): update icon set to lucide-static@${{ steps.check.outputs.latest }}"
           body: |
