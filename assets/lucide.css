@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1785398042262"); /* IE9*/
+  src: url("lucide.eot?t=1786095668459"); /* IE9*/
   src:
-    url("lucide.eot?t=1785398042262#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1786095668459#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1785398042262") format("woff2"),
-    url("lucide.woff?t=1785398042262") format("woff"),
-    url("lucide.ttf?t=1785398042262") format("truetype"),
-    url("lucide.svg?t=1785398042262") format("svg");
+    url("lucide.woff2?t=1786095668459") format("woff2"),
+    url("lucide.woff?t=1786095668459") format("woff"),
+    url("lucide.ttf?t=1786095668459") format("truetype"),
+    url("lucide.svg?t=1786095668459") format("svg");
 }
 
 [class^="icon-"],
@@ -444,6 +444,9 @@
 }
 .icon-atom::before {
   content: "\e3d7";
+}
+.icon-audio-lines-x::before {
+  content: "\e72e";
 }
 .icon-audio-lines::before {
   content: "\e55a";
@@ -912,6 +915,12 @@
 }
 .icon-broccoli::before {
   content: "\e6f5";
+}
+.icon-broom-sparkles::before {
+  content: "\e72f";
+}
+.icon-broom::before {
+  content: "\e730";
 }
 .icon-brush-cleaning::before {
   content: "\e666";
@@ -2053,6 +2062,27 @@
 .icon-eye::before {
   content: "\e0ba";
 }
+.icon-face-angry::before {
+  content: "\e2fc";
+}
+.icon-face-expressionless::before {
+  content: "\e2fd";
+}
+.icon-face-grinning::before {
+  content: "\e300";
+}
+.icon-face-neutral::before {
+  content: "\e114";
+}
+.icon-face-slightly-frowning::before {
+  content: "\e0db";
+}
+.icon-face-slightly-smiling-plus::before {
+  content: "\e301";
+}
+.icon-face-slightly-smiling::before {
+  content: "\e164";
+}
 .icon-factory::before {
   content: "\e29f";
 }
@@ -3097,11 +3127,23 @@
 .icon-laugh::before {
   content: "\e300";
 }
+.icon-layer-arrow-down::before {
+  content: "\e72a";
+}
+.icon-layer-arrow-up::before {
+  content: "\e72b";
+}
 .icon-layers-2::before {
   content: "\e52a";
 }
 .icon-layers-3::before {
   content: "\e529";
+}
+.icon-layers-arrow-down::before {
+  content: "\e72c";
+}
+.icon-layers-arrow-up::before {
+  content: "\e72d";
 }
 .icon-layers-minus::before {
   content: "\e6ee";
@@ -4686,6 +4728,9 @@
 }
 .icon-shield-keyhole::before {
   content: "\e722";
+}
+.icon-shield-lock::before {
+  content: "\e731";
 }
 .icon-shield-minus::before {
   content: "\e518";
