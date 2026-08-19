@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1786282913568"); /* IE9*/
+  src: url("lucide.eot?t=1787051651709"); /* IE9*/
   src:
-    url("lucide.eot?t=1786282913568#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1787051651709#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1786282913568") format("woff2"),
-    url("lucide.woff?t=1786282913568") format("woff"),
-    url("lucide.ttf?t=1786282913568") format("truetype"),
-    url("lucide.svg?t=1786282913568") format("svg");
+    url("lucide.woff2?t=1787051651709") format("woff2"),
+    url("lucide.woff?t=1787051651709") format("woff"),
+    url("lucide.ttf?t=1787051651709") format("truetype"),
+    url("lucide.svg?t=1787051651709") format("svg");
 }
 
 [class^="icon-"],
@@ -1065,6 +1065,9 @@
 }
 .icon-captions::before {
   content: "\e3a4";
+}
+.icon-car-battery::before {
+  content: "\e735";
 }
 .icon-car-front::before {
   content: "\e4fd";
@@ -5169,6 +5172,9 @@
 }
 .icon-square-terminal::before {
   content: "\e20a";
+}
+.icon-square-text::before {
+  content: "\e736";
 }
 .icon-square-user-round::before {
   content: "\e466";

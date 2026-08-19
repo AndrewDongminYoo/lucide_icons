@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.32.0 - 2026-08-19
+
+### Added
+
+- Updated icon set to lucide-static@1.32.0.
+- New icons: `carBattery`, `squareText`.
+
 ## 1.31.0 - 2026-08-18
 
 ### Added
