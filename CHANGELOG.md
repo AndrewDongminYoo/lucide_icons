@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.33.0 - 2026-08-20
+
+### Added
+
+- Updated icon set to lucide-static@1.33.0.
+- New icons: `audioLinesOff`, `listClock`, `midiPort`, `mop`, `mopSparkles`, `squareDimensions`, `usbCPort`.
+
 ## 1.32.0 - 2026-08-19
 
 ### Added

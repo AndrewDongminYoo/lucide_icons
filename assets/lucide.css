@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1787051651709"); /* IE9*/
+  src: url("lucide.eot?t=1787139681503"); /* IE9*/
   src:
-    url("lucide.eot?t=1787051651709#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1787139681503#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1787051651709") format("woff2"),
-    url("lucide.woff?t=1787051651709") format("woff"),
-    url("lucide.ttf?t=1787051651709") format("truetype"),
-    url("lucide.svg?t=1787051651709") format("svg");
+    url("lucide.woff2?t=1787139681503") format("woff2"),
+    url("lucide.woff?t=1787139681503") format("woff"),
+    url("lucide.ttf?t=1787139681503") format("truetype"),
+    url("lucide.svg?t=1787139681503") format("svg");
 }
 
 [class^="icon-"],
@@ -447,6 +447,9 @@
 }
 .icon-atom::before {
   content: "\e3d7";
+}
+.icon-audio-lines-off::before {
+  content: "\e737";
 }
 .icon-audio-lines-x::before {
   content: "\e72e";
@@ -3259,6 +3262,9 @@
 .icon-list-chevrons-up-down::before {
   content: "\e696";
 }
+.icon-list-clock::before {
+  content: "\e738";
+}
 .icon-list-collapse::before {
   content: "\e59b";
 }
@@ -3625,6 +3631,9 @@
 .icon-microwave::before {
   content: "\e37a";
 }
+.icon-midi-port::before {
+  content: "\e739";
+}
 .icon-milestone::before {
   content: "\e298";
 }
@@ -3702,6 +3711,12 @@
 }
 .icon-moon::before {
   content: "\e11e";
+}
+.icon-mop-sparkles::before {
+  content: "\e73a";
+}
+.icon-mop::before {
+  content: "\e73b";
 }
 .icon-more-horizontal::before {
   content: "\e0b6";
@@ -5071,6 +5086,9 @@
 .icon-square-dashed::before {
   content: "\e1cb";
 }
+.icon-square-dimensions::before {
+  content: "\e73c";
+}
 .icon-square-divide::before {
   content: "\e16d";
 }
@@ -5715,6 +5733,9 @@
 }
 .icon-upload::before {
   content: "\e19e";
+}
+.icon-usb-c-port::before {
+  content: "\e73d";
 }
 .icon-usb::before {
   content: "\e356";
