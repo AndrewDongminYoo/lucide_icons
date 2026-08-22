@@ -8,7 +8,10 @@ name: Update Lucide icons
 on:
   workflow_dispatch:
   schedule:
-    - cron: 0 6 * * * # daily 06:00 UTC
+    # Every 4 hours -- 6 runs a day, matching the sibling icon repos. Their
+    # cadence is set by pub.dev's per-package publish rate limit; this package
+    # has no publish.yml, but the mirrors are kept on one schedule.
+    - cron: 0 */4 * * *
 
 permissions:
   contents: write
