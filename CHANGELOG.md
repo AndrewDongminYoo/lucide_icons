@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.34.0 - 2026-08-24
+
+### Added
+
+- Updated icon set to lucide-static@1.34.0.
+- New icons: `mailClock`.
+
 ## 1.33.0 - 2026-08-20
 
 ### Added

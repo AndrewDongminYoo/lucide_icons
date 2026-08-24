@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1787139681503"); /* IE9*/
+  src: url("lucide.eot?t=1787565842988"); /* IE9*/
   src:
-    url("lucide.eot?t=1787139681503#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1787565842988#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1787139681503") format("woff2"),
-    url("lucide.woff?t=1787139681503") format("woff"),
-    url("lucide.ttf?t=1787139681503") format("truetype"),
-    url("lucide.svg?t=1787139681503") format("svg");
+    url("lucide.woff2?t=1787565842988") format("woff2"),
+    url("lucide.woff?t=1787565842988") format("woff"),
+    url("lucide.ttf?t=1787565842988") format("truetype"),
+    url("lucide.svg?t=1787565842988") format("svg");
 }
 
 [class^="icon-"],
@@ -3384,6 +3384,9 @@
 }
 .icon-mail-check::before {
   content: "\e361";
+}
+.icon-mail-clock::before {
+  content: "\e73e";
 }
 .icon-mail-minus::before {
   content: "\e362";
