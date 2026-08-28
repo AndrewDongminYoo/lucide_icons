@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.35.0 - 2026-08-28
+
+### Added
+
+- Updated icon set to lucide-static@1.35.0.
+- New icons: `galaxy`, `robotArm`, `shipCargo`, `trailer`.
+
 ## 1.34.0 - 2026-08-24
 
 ### Added

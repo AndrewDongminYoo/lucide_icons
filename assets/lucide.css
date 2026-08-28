@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1787565842988"); /* IE9*/
+  src: url("lucide.eot?t=1787900710612"); /* IE9*/
   src:
-    url("lucide.eot?t=1787565842988#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1787900710612#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1787565842988") format("woff2"),
-    url("lucide.woff?t=1787565842988") format("woff"),
-    url("lucide.ttf?t=1787565842988") format("truetype"),
-    url("lucide.svg?t=1787565842988") format("svg");
+    url("lucide.woff2?t=1787900710612") format("woff2"),
+    url("lucide.woff?t=1787900710612") format("woff"),
+    url("lucide.ttf?t=1787900710612") format("truetype"),
+    url("lucide.svg?t=1787900710612") format("svg");
 }
 
 [class^="icon-"],
@@ -2602,6 +2602,9 @@
 .icon-funnel::before {
   content: "\e0dc";
 }
+.icon-galaxy::before {
+  content: "\e73f";
+}
 .icon-gallery-horizontal-end::before {
   content: "\e4cf";
 }
@@ -4465,6 +4468,9 @@
 .icon-road::before {
   content: "\e6d9";
 }
+.icon-robot-arm::before {
+  content: "\e740";
+}
 .icon-rocket::before {
   content: "\e286";
 }
@@ -4785,6 +4791,9 @@
 }
 .icon-shield::before {
   content: "\e158";
+}
+.icon-ship-cargo::before {
+  content: "\e741";
 }
 .icon-ship-wheel::before {
   content: "\e502";
@@ -5592,6 +5601,9 @@
 }
 .icon-traffic-cone::before {
   content: "\e505";
+}
+.icon-trailer::before {
+  content: "\e742";
 }
 .icon-train-front-tunnel::before {
   content: "\e507";
