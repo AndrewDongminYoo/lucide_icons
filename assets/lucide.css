@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1787900710612"); /* IE9*/
+  src: url("lucide.eot?t=1787987855106"); /* IE9*/
   src:
-    url("lucide.eot?t=1787900710612#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1787987855106#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1787900710612") format("woff2"),
-    url("lucide.woff?t=1787900710612") format("woff"),
-    url("lucide.ttf?t=1787900710612") format("truetype"),
-    url("lucide.svg?t=1787900710612") format("svg");
+    url("lucide.woff2?t=1787987855106") format("woff2"),
+    url("lucide.woff?t=1787987855106") format("woff"),
+    url("lucide.ttf?t=1787987855106") format("truetype"),
+    url("lucide.svg?t=1787987855106") format("svg");
 }
 
 [class^="icon-"],
@@ -1780,6 +1780,12 @@
 .icon-creative-commons::before {
   content: "\e3b2";
 }
+.icon-credit-card-check::before {
+  content: "\e743";
+}
+.icon-credit-card-x::before {
+  content: "\e744";
+}
 .icon-credit-card::before {
   content: "\e0aa";
 }
@@ -3520,6 +3526,9 @@
 .icon-message-circle-code::before {
   content: "\e562";
 }
+.icon-message-circle-dashed-check::before {
+  content: "\e745";
+}
 .icon-message-circle-dashed::before {
   content: "\e563";
 }
@@ -4234,6 +4243,15 @@
 .icon-play::before {
   content: "\e13c";
 }
+.icon-playing-card::before {
+  content: "\e746";
+}
+.icon-playing-cards-fan::before {
+  content: "\e747";
+}
+.icon-playing-cards::before {
+  content: "\e748";
+}
 .icon-plug-2::before {
   content: "\e380";
 }
@@ -4470,6 +4488,9 @@
 }
 .icon-robot-arm::before {
   content: "\e740";
+}
+.icon-robot-vacuum::before {
+  content: "\e749";
 }
 .icon-rocket::before {
   content: "\e286";
