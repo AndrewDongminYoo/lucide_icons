@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.37.0 - 2026-08-29
+
+### Added
+
+- Updated icon set to lucide-static@1.37.0.
+- New icons: `creditCardMinus`, `creditCardPlus`.
+
 ## 1.36.0 - 2026-08-29
 
 ### Added
