@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.36.0 - 2026-08-29
+
+### Added
+
+- Updated icon set to lucide-static@1.36.0.
+- New icons: `creditCardCheck`, `creditCardX`, `messageCircleDashedCheck`, `playingCard`, `playingCards`, `playingCardsFan`, `robotVacuum`.
+
 ## 1.35.0 - 2026-08-28
 
 ### Added
