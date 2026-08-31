@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.38.0 - 2026-08-31
+
+### Added
+
+- Updated icon set to lucide-static@1.38.0.
+- New icons: `vectorPolygon`.
+
 ## 1.37.0 - 2026-08-29
 
 ### Added
