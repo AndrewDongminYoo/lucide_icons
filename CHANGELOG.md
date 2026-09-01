@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.39.0 - 2026-09-01
+
+### Added
+
+- Updated icon set to lucide-static@1.39.0.
+- New icons: `whistle`.
+
 ## 1.38.0 - 2026-08-31
 
 ### Added
