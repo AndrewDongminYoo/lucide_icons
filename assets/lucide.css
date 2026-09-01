@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1788160792720"); /* IE9*/
+  src: url("lucide.eot?t=1788269846288"); /* IE9*/
   src:
-    url("lucide.eot?t=1788160792720#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1788269846288#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1788160792720") format("woff2"),
-    url("lucide.woff?t=1788160792720") format("woff"),
-    url("lucide.ttf?t=1788160792720") format("truetype"),
-    url("lucide.svg?t=1788160792720") format("svg");
+    url("lucide.woff2?t=1788269846288") format("woff2"),
+    url("lucide.woff?t=1788269846288") format("woff"),
+    url("lucide.ttf?t=1788269846288") format("truetype"),
+    url("lucide.svg?t=1788269846288") format("svg");
 }
 
 [class^="icon-"],
@@ -6045,6 +6045,9 @@
 }
 .icon-wheat::before {
   content: "\e39e";
+}
+.icon-whistle::before {
+  content: "\e74d";
 }
 .icon-whole-word::before {
   content: "\e3df";
