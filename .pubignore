@@ -1,0 +1,21 @@
+# Generated and maintainer-only files.
+.agents/
+.claude/
+.codex/
+.dart_tool/
+.github/
+.trunk/
+.vscode/
+assets/lucide.css
+build/
+coverage/
+docs/
+node_modules/
+test/
+tool/
+analysis_options.yaml
+package.json
+pnpm-lock.yaml
+pnpm-workspace.yaml
+pubspec.lock
+setup.sh

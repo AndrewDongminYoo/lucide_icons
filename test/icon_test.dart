@@ -8,9 +8,19 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 // 🌎 Project imports:
-import 'package:lucide_icons/lucide_icons.dart';
+import 'package:lucide_icons_lite/lucide_icons_lite.dart';
 
 void main() {
+  test('Generated icons use the package font namespace', () {
+    expect(LucideIcons.bot.fontPackage, 'lucide_icons_lite');
+  });
+
+  test('Legacy circle euro name resolves to the current icon', () {
+    // This test protects source compatibility for the deprecated alias.
+    // ignore: deprecated_member_use_from_same_package
+    expect(LucideIcons.circleEuroSign, same(LucideIcons.circleEuro));
+  });
+
   testWidgets('Can set opacity for an Icon', (WidgetTester tester) async {
     await tester.pumpWidget(
       const Directionality(

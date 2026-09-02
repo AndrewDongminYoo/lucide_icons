@@ -1,11 +1,17 @@
 # Changelog
 
-## 1.39.0 - 2026-09-01
+## 1.39.0 - 2026-09-02
 
 ### Added
 
 - Updated icon set to lucide-static@1.39.0.
 - New icons: `whistle`.
+
+### Changed
+
+- Changed the package name and entry point to `package:lucide_icons_lite/lucide_icons_lite.dart`.
+- Preserved `LucideIcons.circleEuroSign` as a deprecated alias for `LucideIcons.circleEuro`.
+- The `circleEuroSign` name was available in version 1.24.0 and removed in version 1.25.0.
 
 ## 1.38.0 - 2026-08-31
 
