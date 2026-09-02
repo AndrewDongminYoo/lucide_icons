@@ -1,6 +1,6 @@
 # Icon update automation
 
-Spec and plan for keeping `lucide_icons` in lockstep with upstream `lucide-static` with zero manual steps.
+Spec and plan for keeping `lucide_icons_lite` in lockstep with upstream `lucide-static` with zero manual steps.
 
 ## Goal
 
@@ -30,10 +30,10 @@ The pipeline is ~90% there. Two gaps block "fully automated".
 ## Gaps
 
 1. **Regeneration is manual.** `update-icons.yml` is `workflow_dispatch` only, so a human must click "Run workflow" after seeing the Dependabot PR.
-2. **`README.md` version pin drifts.** The install snippet pins a `ref: vX.Y.Z` git tag; neither `update-icons.yml` nor `update_icons.sh` touches it, so every automated PR would ship a stale README. Sync it in the same step that bumps `pubspec.yaml`.
+2. **`README.md` version constraint drifts.** The install snippet declares `lucide_icons_lite: ^X.Y.Z`, but neither `update-icons.yml` nor `update_icons.sh` changes it. Sync the constraint in the same step that updates `pubspec.yaml`.
 3. **The generator output was not formatted.** `tool/update_icons.sh` ran the generator but not `dart format`; the raw output is single-line and violates `analysis_options.yaml` `page_width: 80`.
    Left unformatted, the committed-vs- committed diff is all-lines-changed, which _also_ breaks the changelog's `+`/`-` extraction (it would list every icon as added).
-   **Fixed** — step 4 (`dart format lib/lucide_icons.dart`) added to `update_icons.sh`, so both `merry` and CI now produce identical, formatted output.
+   **Fixed** — step 4 (`dart format lib/lucide_icons_lite.dart`) added to `update_icons.sh`, so both `merry` and CI now produce identical, formatted output.
 
 ## Proposed design (full automation)
 
@@ -62,7 +62,7 @@ Recommended gates, cheapest first:
 Sketch of the removal guard (runs against the regenerated file before commit):
 
 ```bash
-removed="$(git diff -- lib/lucide_icons.dart \
+removed="$(git diff -- lib/lucide_icons_lite.dart \
   | grep -E '^-[[:space:]]+static const IconData' \
   | sed -E 's/.*IconData[[:space:]]+([A-Za-z0-9]+).*/\1/' | sort -u)"
 if [ -n "$removed" ]; then
@@ -99,7 +99,7 @@ Do not build a bespoke version-diffing service, a scheduled Dart script, or a cu
 ## Implementation checklist
 
 1. Add `schedule:` cron to `update-icons.yml` → verify a manual `workflow_dispatch` still opens a correct PR.
-2. Sync the `README.md` `ref: vX.Y.Z` pin in the version-bump step (`sed` on the snippet), so automated PRs don't drift.
+2. Sync the `README.md` `lucide_icons_lite: ^X.Y.Z` constraint in the version-bump step, so automated PRs do not leave a stale installation example.
 3. Add `flutter test` step after `flutter analyze`.
 4. Add the removal-guard step; wire its output to a conditional auto-merge step.
    The guard also fails safe if upstream ever breaks codepoint stability: a shift surfaces existing names on `-` lines, which blocks auto-merge for human review.

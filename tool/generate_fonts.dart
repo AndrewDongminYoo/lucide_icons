@@ -215,11 +215,15 @@ Future<void> main(List<String> args) async {
   final npmPackage = _flagValue(args, 'npm-package', 'lucide-static');
   final isLucideStatic = npmPackage == 'lucide-static';
   final fontFamily = _flagValue(args, 'font-family', 'Lucide');
-  final fontPackage = _flagValue(args, 'font-package', 'lucide_icons');
+  final fontPackage = _flagValue(args, 'font-package', 'lucide_icons_lite');
   final className = _flagValue(args, 'class-name', 'LucideIcons');
   final cssPrefix = _flagValue(args, 'css-prefix', 'icon-');
   final docsUrl = _flagValue(args, 'docs-url', 'https://lucide.dev/icons/');
-  final outputPath = _flagValue(args, 'output', './lib/lucide_icons.dart');
+  final outputPath = _flagValue(
+    args,
+    'output',
+    './lib/lucide_icons_lite.dart',
+  );
 
   final defaultSvgDir = './node_modules/$npmPackage/icons';
   final svgDirs = svgDirArgs.isEmpty ? <String>[defaultSvgDir] : svgDirArgs;
@@ -316,6 +320,14 @@ Future<void> main(List<String> args) async {
     generatedOutput.add('  /// $fontFamily icon named "$readableName".\n');
     generatedOutput.add(
       "  static const IconData $camelName = IconData(0x$hex, fontFamily: '$fontFamily', fontPackage: '$fontPackage');\n",
+    );
+  }
+
+  if (isLucideStatic && seenNames.contains('circleEuro')) {
+    generatedOutput.add(
+      '\n  /// Use [circleEuro] instead.\n'
+      "  @Deprecated('Use circleEuro instead.')\n"
+      '  static const IconData circleEuroSign = circleEuro;\n',
     );
   }
 

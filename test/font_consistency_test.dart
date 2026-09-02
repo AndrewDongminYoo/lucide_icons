@@ -19,9 +19,9 @@ Set<int> _cssCodepoints() {
       .toSet();
 }
 
-/// Extracts codepoints from the generated `lib/lucide_icons.dart`.
+/// Extracts codepoints from the generated `lib/lucide_icons_lite.dart`.
 Set<int> _dartCodepoints() {
-  final content = File('lib/lucide_icons.dart').readAsStringSync();
+  final content = File('lib/lucide_icons_lite.dart').readAsStringSync();
   final pattern = RegExp(r'IconData\(\s*0x([0-9A-Fa-f]+)');
   return pattern
       .allMatches(content)
