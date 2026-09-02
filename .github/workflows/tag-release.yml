@@ -10,7 +10,7 @@ on:
       - pubspec.yaml
 
 permissions:
-  contents: write
+  contents: read
 
 # Run Node-based actions on Node 24 to silence the Node 20 deprecation notice.
 env:
@@ -25,6 +25,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          # A PAT-authored tag can trigger publish.yml; GITHUB_TOKEN-authored pushes cannot.
+          token: ${{ secrets.RELEASE_TOKEN }}
 
       - name: Create tag if missing
         run: |
