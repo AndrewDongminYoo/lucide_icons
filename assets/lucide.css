@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1788269846288"); /* IE9*/
+  src: url("lucide.eot?t=1788425566433"); /* IE9*/
   src:
-    url("lucide.eot?t=1788269846288#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1788425566433#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1788269846288") format("woff2"),
-    url("lucide.woff?t=1788269846288") format("woff"),
-    url("lucide.ttf?t=1788269846288") format("truetype"),
-    url("lucide.svg?t=1788269846288") format("svg");
+    url("lucide.woff2?t=1788425566433") format("woff2"),
+    url("lucide.woff?t=1788425566433") format("woff"),
+    url("lucide.ttf?t=1788425566433") format("truetype"),
+    url("lucide.svg?t=1788425566433") format("svg");
 }
 
 [class^="icon-"],
@@ -904,6 +904,9 @@
 .icon-brick-wall::before {
   content: "\e581";
 }
+.icon-bridge::before {
+  content: "\e74f";
+}
 .icon-briefcase-business::before {
   content: "\e5d5";
 }
@@ -1044,6 +1047,9 @@
 }
 .icon-camera::before {
   content: "\e064";
+}
+.icon-can::before {
+  content: "\e750";
 }
 .icon-candlestick-chart::before {
   content: "\e4a8";
@@ -3244,6 +3250,9 @@
 .icon-lightbulb::before {
   content: "\e1c2";
 }
+.icon-lighthouse::before {
+  content: "\e751";
+}
 .icon-line-chart::before {
   content: "\e2a5";
 }
@@ -3408,6 +3417,9 @@
 }
 .icon-mail-open::before {
   content: "\e363";
+}
+.icon-mail-pen::before {
+  content: "\e74e";
 }
 .icon-mail-plus::before {
   content: "\e364";
@@ -4837,6 +4849,12 @@
 .icon-shopping-basket::before {
   content: "\e4ea";
 }
+.icon-shopping-cart-minus::before {
+  content: "\e752";
+}
+.icon-shopping-cart-plus::before {
+  content: "\e753";
+}
 .icon-shopping-cart::before {
   content: "\e15c";
 }
@@ -4848,6 +4866,9 @@
 }
 .icon-shredder::before {
   content: "\e65b";
+}
+.icon-shrimp-off::before {
+  content: "\e754";
 }
 .icon-shrimp::before {
   content: "\e649";

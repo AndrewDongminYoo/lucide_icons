@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.40.0 - 2026-09-03
+
+### Added
+
+- Updated icon set to lucide-static@1.40.0.
+- New icons: `bridge`, `can`, `lighthouse`, `mailPen`, `shoppingCartMinus`, `shoppingCartPlus`, `shrimpOff`.
+
 ## 1.39.0 - 2026-09-02
 
 ### Added
