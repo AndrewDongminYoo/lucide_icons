@@ -1,6 +1,6 @@
 name: lucide_icons_lite
 description: Lightweight Lucide icons for Flutter with one bundled font and a single-weight IconData API.
-version: 1.40.0
+version: 1.41.0
 homepage: https://lucide.dev
 repository: https://github.com/AndrewDongminYoo/lucide_icons
 issue_tracker: https://github.com/AndrewDongminYoo/lucide_icons/issues

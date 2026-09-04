@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.41.0 - 2026-09-04
+
+### Added
+
+- Updated icon set to lucide-static@1.41.0.
+- New icons: `canSoda`, `creditCardReader`, `doorStairwell`, `engine`, `germ`, `germOff`, `squareExclamationPoint`, `virus`, `virusOff`.
+
 ## 1.40.0 - 2026-09-03
 
 ### Added
