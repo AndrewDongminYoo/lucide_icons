@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.42.0 - 2026-09-07
+
+### Added
+
+- Updated icon set to lucide-static@1.42.0.
+- New icons: `circleDashedCheck`, `dome`, `equalApproximatelyNot`, `gapHorizontal`, `gapVertical`, `trashOff`, `userGroup`, `userRoundGroup`.
+
 ## 1.41.0 - 2026-09-04
 
 ### Added
