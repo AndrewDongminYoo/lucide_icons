@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1788516814176"); /* IE9*/
+  src: url("lucide.eot?t=1788775796508"); /* IE9*/
   src:
-    url("lucide.eot?t=1788516814176#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1788775796508#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1788516814176") format("woff2"),
-    url("lucide.woff?t=1788516814176") format("woff"),
-    url("lucide.ttf?t=1788516814176") format("truetype"),
-    url("lucide.svg?t=1788516814176") format("svg");
+    url("lucide.woff2?t=1788775796508") format("woff2"),
+    url("lucide.woff?t=1788775796508") format("woff"),
+    url("lucide.ttf?t=1788775796508") format("truetype"),
+    url("lucide.svg?t=1788775796508") format("svg");
 }
 
 [class^="icon-"],
@@ -1363,6 +1363,9 @@
 .icon-circle-chevron-up::before {
   content: "\e4e0";
 }
+.icon-circle-dashed-check::before {
+  content: "\e75e";
+}
 .icon-circle-dashed::before {
   content: "\e4b0";
 }
@@ -1957,6 +1960,9 @@
 .icon-dollar-sign::before {
   content: "\e0b1";
 }
+.icon-dome::before {
+  content: "\e75f";
+}
 .icon-donut::before {
   content: "\e4bc";
 }
@@ -2061,6 +2067,9 @@
 }
 .icon-engine::before {
   content: "\e758";
+}
+.icon-equal-approximately-not::before {
+  content: "\e760";
 }
 .icon-equal-approximately::before {
   content: "\e634";
@@ -2664,6 +2673,12 @@
 }
 .icon-gantt-chart::before {
   content: "\e4c4";
+}
+.icon-gap-horizontal::before {
+  content: "\e761";
+}
+.icon-gap-vertical::before {
+  content: "\e762";
 }
 .icon-gauge-circle::before {
   content: "\e4e1";
@@ -5695,6 +5710,9 @@
 .icon-trash-2::before {
   content: "\e18e";
 }
+.icon-trash-off::before {
+  content: "\e763";
+}
 .icon-trash::before {
   content: "\e18d";
 }
@@ -5845,6 +5863,9 @@
 .icon-user-cog::before {
   content: "\e342";
 }
+.icon-user-group::before {
+  content: "\e764";
+}
 .icon-user-key::before {
   content: "\e6c8";
 }
@@ -5874,6 +5895,9 @@
 }
 .icon-user-round-cog::before {
   content: "\e46a";
+}
+.icon-user-round-group::before {
+  content: "\e765";
 }
 .icon-user-round-key::before {
   content: "\e6c9";
