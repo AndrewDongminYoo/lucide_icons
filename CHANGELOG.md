@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.43.0 - 2026-09-08
+
+### Added
+
+- Updated icon set to lucide-static@1.43.0.
+- New icons: `carton`, `cartonOff`, `ticTacToe`.
+
 ## 1.42.0 - 2026-09-07
 
 ### Added
