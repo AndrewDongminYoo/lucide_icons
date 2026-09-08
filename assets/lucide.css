@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1788775796508"); /* IE9*/
+  src: url("lucide.eot?t=1788869121036"); /* IE9*/
   src:
-    url("lucide.eot?t=1788775796508#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1788869121036#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1788775796508") format("woff2"),
-    url("lucide.woff?t=1788775796508") format("woff"),
-    url("lucide.ttf?t=1788775796508") format("truetype"),
-    url("lucide.svg?t=1788775796508") format("svg");
+    url("lucide.woff2?t=1788869121036") format("woff2"),
+    url("lucide.woff?t=1788869121036") format("woff"),
+    url("lucide.ttf?t=1788869121036") format("truetype"),
+    url("lucide.svg?t=1788869121036") format("svg");
 }
 
 [class^="icon-"],
@@ -1098,6 +1098,12 @@
 }
 .icon-carrot::before {
   content: "\e25a";
+}
+.icon-carton-off::before {
+  content: "\e766";
+}
+.icon-carton::before {
+  content: "\e767";
 }
 .icon-case-lower::before {
   content: "\e3d8";
@@ -5604,6 +5610,9 @@
 }
 .icon-thumbs-up::before {
   content: "\e18a";
+}
+.icon-tic-tac-toe::before {
+  content: "\e768";
 }
 .icon-ticket-check::before {
   content: "\e5ae";
