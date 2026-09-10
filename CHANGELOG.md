@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.44.0 - 2026-09-10
+
+### Added
+
+- Updated icon set to lucide-static@1.44.0.
+- New icons: `toothbrush`, `toothbrushSparkles`, `trianglesCenterlineDashedHorizontal`, `trianglesCenterlineDashedVertical`.
+
 ## 1.43.0 - 2026-09-08
 
 ### Added
