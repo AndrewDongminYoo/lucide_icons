@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.45.0 - 2026-09-11
+
+### Added
+
+- Updated icon set to lucide-static@1.45.0.
+- New icons: `bookBookmark`, `buildingComplex`, `buildingComplexPlus`, `calendarChevronsRight`, `globeCode`, `hourglassCog`, `houses`, `ivBag`, `layoutArrowDown`, `layoutArrowRight`, `messagesCircle`, `mouth`, `mouthOff`, `notebookDot`, `park`, `plantPot`, `squareBookmark`.
+
 ## 1.44.0 - 2026-09-10
 
 ### Added
