@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.46.0 - 2026-09-14
+
+### Added
+
+- Updated icon set to lucide-static@1.46.0.
+- New icons: `clefAlto`, `clefBass`, `clefTreble`, `monitorPc`.
+
 ## 1.45.0 - 2026-09-11
 
 ### Added
