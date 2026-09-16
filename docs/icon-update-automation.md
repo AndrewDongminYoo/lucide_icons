@@ -110,5 +110,5 @@ Do not build a bespoke version-diffing service, a scheduled Dart script, or a cu
 
 - Cron frequency (daily vs weekly) — upstream ships often; daily keeps drift small.
 - Auto-merge yes/no, and whether removals should hard-fail or just skip auto-merge.
-- Keep Dependabot as a redundant notifier, or drop it once the schedule lands.
+- ~~Keep Dependabot as a redundant notifier, or drop it once the schedule lands.~~ Dropped on 2026-09-16: the schedule is the trigger and `tool/update_icons.sh` bumps `package.json` itself, so Dependabot's PRs only added CI runs.
 - Is pub.dev publishing in scope at all? (Package currently consumed as a git dep.)

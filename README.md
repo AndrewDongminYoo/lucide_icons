@@ -35,8 +35,8 @@ Visit [lucide.dev](https://lucide.dev) for the full icon list.
 
 ## Updating the icon set
 
-Dependabot detects new `lucide-static` releases.
-The **Update Lucide icons** workflow regenerates the package and opens a pull request.
+The **Update Lucide icons** workflow checks for new `lucide-static` releases every 4 hours.
+When one is found, it regenerates the package and opens a pull request.
 
 Run the same update locally with the repository's `merry` script:
 
