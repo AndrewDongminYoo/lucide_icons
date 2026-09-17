@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.47.0 - 2026-09-17
+
+### Added
+
+- Updated icon set to lucide-static@1.47.0.
+- New icons: `cupcake`, `doorClosedPackage`, `faucet`, `lambda`, `nepaliRupee`, `rotateCwClock`, `squareDashedPlus`, `squareDashedX`, `squareDashedXCorner`, `tubeLotion`.
+
 ## 1.46.0 - 2026-09-14
 
 ### Added
