@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1789377596440"); /* IE9*/
+  src: url("lucide.eot?t=1789629944814"); /* IE9*/
   src:
-    url("lucide.eot?t=1789377596440#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1789629944814#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1789377596440") format("woff2"),
-    url("lucide.woff?t=1789377596440") format("woff"),
-    url("lucide.ttf?t=1789377596440") format("truetype"),
-    url("lucide.svg?t=1789377596440") format("svg");
+    url("lucide.woff2?t=1789629944814") format("woff2"),
+    url("lucide.woff?t=1789629944814") format("woff"),
+    url("lucide.ttf?t=1789629944814") format("truetype"),
+    url("lucide.svg?t=1789629944814") format("svg");
 }
 
 [class^="icon-"],
@@ -1858,6 +1858,9 @@
 .icon-cup-soda::before {
   content: "\e2d1";
 }
+.icon-cupcake::before {
+  content: "\e77d";
+}
 .icon-curly-braces::before {
   content: "\e36a";
 }
@@ -1995,6 +1998,9 @@
 }
 .icon-door-closed-locked::before {
   content: "\e664";
+}
+.icon-door-closed-package::before {
+  content: "\e77e";
 }
 .icon-door-closed::before {
   content: "\e3d5";
@@ -2169,6 +2175,9 @@
 }
 .icon-fast-forward::before {
   content: "\e0bd";
+}
+.icon-faucet::before {
+  content: "\e77f";
 }
 .icon-feather::before {
   content: "\e0be";
@@ -3184,6 +3193,9 @@
 .icon-keyboard::before {
   content: "\e284";
 }
+.icon-lambda::before {
+  content: "\e780";
+}
 .icon-lamp-ceiling::before {
   content: "\e2d9";
 }
@@ -3958,6 +3970,9 @@
 .icon-navigation::before {
   content: "\e123";
 }
+.icon-nepali-rupee::before {
+  content: "\e781";
+}
 .icon-network::before {
   content: "\e125";
 }
@@ -4639,6 +4654,9 @@
 .icon-rotate-ccw::before {
   content: "\e148";
 }
+.icon-rotate-cw-clock::before {
+  content: "\e782";
+}
 .icon-rotate-cw-fading-clock::before {
   content: "\e726";
 }
@@ -5239,11 +5257,20 @@
 .icon-square-dashed-mouse-pointer::before {
   content: "\e509";
 }
+.icon-square-dashed-plus::before {
+  content: "\e783";
+}
 .icon-square-dashed-text::before {
   content: "\e6ea";
 }
 .icon-square-dashed-top-solid::before {
   content: "\e66c";
+}
+.icon-square-dashed-x-corner::before {
+  content: "\e784";
+}
+.icon-square-dashed-x::before {
+  content: "\e785";
 }
 .icon-square-dashed::before {
   content: "\e1cb";
@@ -5841,6 +5868,9 @@
 }
 .icon-truck::before {
   content: "\e194";
+}
+.icon-tube-lotion::before {
+  content: "\e786";
 }
 .icon-turkish-lira::before {
   content: "\e680";
