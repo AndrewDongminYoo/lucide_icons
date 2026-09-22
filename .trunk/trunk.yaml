@@ -19,6 +19,7 @@ runtimes:
 lint:
   disabled:
     - dart
+    - svgo
   enabled:
     - actionlint@1.7.12
     - pinact@4.1.1
