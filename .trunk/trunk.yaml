@@ -21,8 +21,9 @@ lint:
     - dart
     - svgo
   enabled:
+    - pinact@4.1.1:
+        commands: [lint, upgrade]
     - actionlint@1.7.12
-    - pinact@4.1.1
     - shellcheck@0.11.0
     - shfmt@3.13.1
     - checkov@3.3.17
