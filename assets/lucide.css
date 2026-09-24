@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1789629944814"); /* IE9*/
+  src: url("lucide.eot?t=1790228811961"); /* IE9*/
   src:
-    url("lucide.eot?t=1789629944814#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1790228811961#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1789629944814") format("woff2"),
-    url("lucide.woff?t=1789629944814") format("woff"),
-    url("lucide.ttf?t=1789629944814") format("truetype"),
-    url("lucide.svg?t=1789629944814") format("svg");
+    url("lucide.woff2?t=1790228811961") format("woff2"),
+    url("lucide.woff?t=1790228811961") format("woff"),
+    url("lucide.ttf?t=1790228811961") format("truetype"),
+    url("lucide.svg?t=1790228811961") format("svg");
 }
 
 [class^="icon-"],
@@ -918,6 +918,9 @@
 }
 .icon-briefcase-medical::before {
   content: "\e5d6";
+}
+.icon-briefcase-plus::before {
+  content: "\e787";
 }
 .icon-briefcase::before {
   content: "\e062";
@@ -3052,6 +3055,9 @@
 .icon-hourglass::before {
   content: "\e296";
 }
+.icon-house-cog::before {
+  content: "\e788";
+}
 .icon-house-heart::before {
   content: "\e695";
 }
@@ -3346,8 +3352,17 @@
 .icon-line-chart::before {
   content: "\e2a5";
 }
+.icon-line-dot-bottom-vertical::before {
+  content: "\e789";
+}
+.icon-line-dot-left-horizontal::before {
+  content: "\e78a";
+}
 .icon-line-dot-right-horizontal::before {
   content: "\e6b9";
+}
+.icon-line-dot-top-vertical::before {
+  content: "\e78b";
 }
 .icon-line-squiggle::before {
   content: "\e67a";
@@ -5361,6 +5376,9 @@
 }
 .icon-square-slash::before {
   content: "\e174";
+}
+.icon-square-sparkles::before {
+  content: "\e78c";
 }
 .icon-square-split-horizontal::before {
   content: "\e3b6";

@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.48.0 - 2026-09-24
+
+### Added
+
+- Updated icon set to lucide-static@1.48.0.
+- New icons: `briefcasePlus`, `houseCog`, `lineDotBottomVertical`, `lineDotLeftHorizontal`, `lineDotTopVertical`, `squareSparkles`.
+
 ## 1.47.0 - 2026-09-17
 
 ### Added
