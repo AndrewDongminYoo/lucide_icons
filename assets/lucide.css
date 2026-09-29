@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1790228811961"); /* IE9*/
+  src: url("lucide.eot?t=1790720011576"); /* IE9*/
   src:
-    url("lucide.eot?t=1790228811961#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1790720011576#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1790228811961") format("woff2"),
-    url("lucide.woff?t=1790228811961") format("woff"),
-    url("lucide.ttf?t=1790228811961") format("truetype"),
-    url("lucide.svg?t=1790228811961") format("svg");
+    url("lucide.woff2?t=1790720011576") format("woff2"),
+    url("lucide.woff?t=1790720011576") format("woff"),
+    url("lucide.ttf?t=1790720011576") format("truetype"),
+    url("lucide.svg?t=1790720011576") format("svg");
 }
 
 [class^="icon-"],
@@ -549,6 +549,9 @@
 }
 .icon-bandage::before {
   content: "\e61d";
+}
+.icon-bangladeshi-taka::before {
+  content: "\e78d";
 }
 .icon-banknote-arrow-down::before {
   content: "\e64c";
@@ -3325,6 +3328,9 @@
 .icon-letter-text::before {
   content: "\e605";
 }
+.icon-letters::before {
+  content: "\e78e";
+}
 .icon-library-big::before {
   content: "\e54e";
 }
@@ -4458,6 +4464,9 @@
 }
 .icon-presentation::before {
   content: "\e4ae";
+}
+.icon-printer-3d::before {
+  content: "\e78f";
 }
 .icon-printer-check::before {
   content: "\e5f5";
