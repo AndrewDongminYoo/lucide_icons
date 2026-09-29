@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.49.0 - 2026-09-29
+
+### Added
+
+- Updated icon set to lucide-static@1.49.0.
+- New icons: `bangladeshiTaka`, `letters`, `printer3d`.
+
 ## 1.48.0 - 2026-09-24
 
 ### Added
