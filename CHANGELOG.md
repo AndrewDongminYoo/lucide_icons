@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.50.0 - 2026-10-02
+
+### Added
+
+- Updated icon set to lucide-static@1.50.0.
+- New icons: `layoutGridCircles`.
+
 ## 1.49.0 - 2026-09-29
 
 ### Added
