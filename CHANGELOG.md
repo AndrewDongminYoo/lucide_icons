@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.51.0 - 2026-10-03
+
+### Added
+
+- Updated icon set to lucide-static@1.51.0.
+- New icons: `armenianDram`, `doorClosedCog`, `kazakhTenge`, `rugbyBall`, `textAlignJustifyCenter`, `textAlignJustifyEnd`, `textAlignJustifyStart`, `windArrowUp`.
+
 ## 1.50.0 - 2026-10-02
 
 ### Added

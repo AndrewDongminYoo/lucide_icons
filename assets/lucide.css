@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1790940122831"); /* IE9*/
+  src: url("lucide.eot?t=1791007979791"); /* IE9*/
   src:
-    url("lucide.eot?t=1790940122831#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1791007979791#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1790940122831") format("woff2"),
-    url("lucide.woff?t=1790940122831") format("woff"),
-    url("lucide.ttf?t=1790940122831") format("truetype"),
-    url("lucide.svg?t=1790940122831") format("svg");
+    url("lucide.woff2?t=1791007979791") format("woff2"),
+    url("lucide.woff?t=1791007979791") format("woff"),
+    url("lucide.ttf?t=1791007979791") format("truetype"),
+    url("lucide.svg?t=1791007979791") format("svg");
 }
 
 [class^="icon-"],
@@ -219,6 +219,9 @@
 }
 .icon-armchair::before {
   content: "\e2c0";
+}
+.icon-armenian-dram::before {
+  content: "\e791";
 }
 .icon-arrow-big-down-dash::before {
   content: "\e41d";
@@ -2002,6 +2005,9 @@
 .icon-donut::before {
   content: "\e4bc";
 }
+.icon-door-closed-cog::before {
+  content: "\e792";
+}
 .icon-door-closed-locked::before {
   content: "\e664";
 }
@@ -3183,6 +3189,9 @@
 }
 .icon-kayak::before {
   content: "\e68f";
+}
+.icon-kazakh-tenge::before {
+  content: "\e793";
 }
 .icon-key-round::before {
   content: "\e4a3";
@@ -4717,6 +4726,9 @@
 .icon-rss::before {
   content: "\e14a";
 }
+.icon-rugby-ball::before {
+  content: "\e794";
+}
 .icon-ruler-dimension-line::before {
   content: "\e662";
 }
@@ -5680,6 +5692,15 @@
 .icon-text-align-end::before {
   content: "\e183";
 }
+.icon-text-align-justify-center::before {
+  content: "\e795";
+}
+.icon-text-align-justify-end::before {
+  content: "\e796";
+}
+.icon-text-align-justify-start::before {
+  content: "\e797";
+}
 .icon-text-align-justify::before {
   content: "\e184";
 }
@@ -6294,6 +6315,9 @@
 }
 .icon-wind-arrow-down::before {
   content: "\e631";
+}
+.icon-wind-arrow-up::before {
+  content: "\e798";
 }
 .icon-wind::before {
   content: "\e1b0";
