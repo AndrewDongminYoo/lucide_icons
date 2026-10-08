@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.53.0 - 2026-10-08
+
+### Added
+
+- Updated icon set to lucide-static@1.53.0.
+- New icons: `groceries`, `hikingStick`, `scratchBlocks`.
+
 ## 1.52.0 - 2026-10-04
 
 ### Added

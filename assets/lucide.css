@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1791100974404"); /* IE9*/
+  src: url("lucide.eot?t=1791439898554"); /* IE9*/
   src:
-    url("lucide.eot?t=1791100974404#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1791439898554#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1791100974404") format("woff2"),
-    url("lucide.woff?t=1791100974404") format("woff"),
-    url("lucide.ttf?t=1791100974404") format("truetype"),
-    url("lucide.svg?t=1791100974404") format("svg");
+    url("lucide.woff2?t=1791439898554") format("woff2"),
+    url("lucide.woff?t=1791439898554") format("woff"),
+    url("lucide.ttf?t=1791439898554") format("truetype"),
+    url("lucide.svg?t=1791439898554") format("svg");
 }
 
 [class^="icon-"],
@@ -2896,6 +2896,9 @@
 .icon-grip::before {
   content: "\e3b1";
 }
+.icon-groceries::before {
+  content: "\e799";
+}
 .icon-group::before {
   content: "\e464";
 }
@@ -3039,6 +3042,9 @@
 }
 .icon-highlighter::before {
   content: "\e0f4";
+}
+.icon-hiking-stick::before {
+  content: "\e79a";
 }
 .icon-history::before {
   content: "\e1f5";
@@ -4842,6 +4848,9 @@
 }
 .icon-scooter::before {
   content: "\e6ac";
+}
+.icon-scratch-blocks::before {
+  content: "\e79b";
 }
 .icon-screen-share-off::before {
   content: "\e150";
