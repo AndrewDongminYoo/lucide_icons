@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.54.0 - 2026-10-09
+
+### Added
+
+- Updated icon set to lucide-static@1.54.0.
+- New icons: `lens`.
+
 ## 1.53.0 - 2026-10-08
 
 ### Added

@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1791439898554"); /* IE9*/
+  src: url("lucide.eot?t=1791526257644"); /* IE9*/
   src:
-    url("lucide.eot?t=1791439898554#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1791526257644#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1791439898554") format("woff2"),
-    url("lucide.woff?t=1791439898554") format("woff"),
-    url("lucide.ttf?t=1791439898554") format("truetype"),
-    url("lucide.svg?t=1791439898554") format("svg");
+    url("lucide.woff2?t=1791526257644") format("woff2"),
+    url("lucide.woff?t=1791526257644") format("woff"),
+    url("lucide.ttf?t=1791526257644") format("truetype"),
+    url("lucide.svg?t=1791526257644") format("svg");
 }
 
 [class^="icon-"],
@@ -3342,6 +3342,9 @@
 }
 .icon-lens-convex::before {
   content: "\e6b8";
+}
+.icon-lens::before {
+  content: "\e79c";
 }
 .icon-letter-text::before {
   content: "\e605";
