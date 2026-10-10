@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1791526257644"); /* IE9*/
+  src: url("lucide.eot?t=1791612622682"); /* IE9*/
   src:
-    url("lucide.eot?t=1791526257644#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1791612622682#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1791526257644") format("woff2"),
-    url("lucide.woff?t=1791526257644") format("woff"),
-    url("lucide.ttf?t=1791526257644") format("truetype"),
-    url("lucide.svg?t=1791526257644") format("svg");
+    url("lucide.woff2?t=1791612622682") format("woff2"),
+    url("lucide.woff?t=1791612622682") format("woff"),
+    url("lucide.ttf?t=1791612622682") format("truetype"),
+    url("lucide.svg?t=1791612622682") format("svg");
 }
 
 [class^="icon-"],
@@ -2941,6 +2941,9 @@
 .icon-handbag::before {
   content: "\e689";
 }
+.icon-handle-bottom-right::before {
+  content: "\e79d";
+}
 .icon-handshake::before {
   content: "\e5c0";
 }
@@ -3543,6 +3546,9 @@
 }
 .icon-mail-clock::before {
   content: "\e73e";
+}
+.icon-mail-dot::before {
+  content: "\e79e";
 }
 .icon-mail-minus::before {
   content: "\e362";
@@ -4327,6 +4333,9 @@
 .icon-phone-incoming::before {
   content: "\e136";
 }
+.icon-phone-log::before {
+  content: "\e79f";
+}
 .icon-phone-missed::before {
   content: "\e137";
 }
@@ -4861,6 +4870,9 @@
 .icon-screen-share::before {
   content: "\e14f";
 }
+.icon-screw::before {
+  content: "\e7a0";
+}
 .icon-scroll-text::before {
   content: "\e45f";
 }
@@ -4968,6 +4980,9 @@
 }
 .icon-shield-half::before {
   content: "\e517";
+}
+.icon-shield-house::before {
+  content: "\e7a1";
 }
 .icon-shield-keyhole::before {
   content: "\e722";
@@ -6091,6 +6106,9 @@
 .icon-user-round-search::before {
   content: "\e578";
 }
+.icon-user-round-star::before {
+  content: "\e7a2";
+}
 .icon-user-round-x::before {
   content: "\e46d";
 }
@@ -6306,6 +6324,9 @@
 }
 .icon-wifi-high::before {
   content: "\e5f7";
+}
+.icon-wifi-lock::before {
+  content: "\e7a3";
 }
 .icon-wifi-low::before {
   content: "\e5f8";

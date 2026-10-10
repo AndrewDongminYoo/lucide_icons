@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.55.0 - 2026-10-10
+
+### Added
+
+- Updated icon set to lucide-static@1.55.0.
+- New icons: `handleBottomRight`, `mailDot`, `phoneLog`, `screw`, `shieldHouse`, `userRoundStar`, `wifiLock`.
+
 ## 1.54.0 - 2026-10-09
 
 ### Added
