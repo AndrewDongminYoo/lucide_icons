@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1791612622682"); /* IE9*/
+  src: url("lucide.eot?t=1791871997187"); /* IE9*/
   src:
-    url("lucide.eot?t=1791612622682#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1791871997187#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1791612622682") format("woff2"),
-    url("lucide.woff?t=1791612622682") format("woff"),
-    url("lucide.ttf?t=1791612622682") format("truetype"),
-    url("lucide.svg?t=1791612622682") format("svg");
+    url("lucide.woff2?t=1791871997187") format("woff2"),
+    url("lucide.woff?t=1791871997187") format("woff"),
+    url("lucide.ttf?t=1791871997187") format("truetype"),
+    url("lucide.svg?t=1791871997187") format("svg");
 }
 
 [class^="icon-"],
@@ -3709,6 +3709,9 @@
 .icon-message-circle-reply::before {
   content: "\e569";
 }
+.icon-message-circle-text::before {
+  content: "\e7a4";
+}
 .icon-message-circle-warning::before {
   content: "\e56a";
 }
@@ -4923,6 +4926,9 @@
 }
 .icon-server-crash::before {
   content: "\e1e9";
+}
+.icon-server-nas::before {
+  content: "\e7a5";
 }
 .icon-server-off::before {
   content: "\e1ea";

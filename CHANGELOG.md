@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.56.0 - 2026-10-13
+
+### Added
+
+- Updated icon set to lucide-static@1.56.0.
+- New icons: `messageCircleText`, `serverNas`.
+
 ## 1.55.0 - 2026-10-10
 
 ### Added
