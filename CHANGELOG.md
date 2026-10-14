@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.57.0 - 2026-10-14
+
+### Added
+
+- Updated icon set to lucide-static@1.57.0.
+- New icons: `belarusianRuble`, `calendarChevronsLeft`, `circleFadingPlay`, `cpuAi`, `folderUser`, `folderUsers`, `graphStar`, `guitarElectric`, `perfumeBottle`, `usersCollaboration`, `usersRoundCollaboration`.
+
 ## 1.56.0 - 2026-10-13
 
 ### Added

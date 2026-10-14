@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1791871997187"); /* IE9*/
+  src: url("lucide.eot?t=1791958157381"); /* IE9*/
   src:
-    url("lucide.eot?t=1791871997187#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1791958157381#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1791871997187") format("woff2"),
-    url("lucide.woff?t=1791871997187") format("woff"),
-    url("lucide.ttf?t=1791871997187") format("truetype"),
-    url("lucide.svg?t=1791871997187") format("svg");
+    url("lucide.woff2?t=1791958157381") format("woff2"),
+    url("lucide.woff?t=1791958157381") format("woff"),
+    url("lucide.ttf?t=1791958157381") format("truetype"),
+    url("lucide.svg?t=1791958157381") format("svg");
 }
 
 [class^="icon-"],
@@ -655,6 +655,9 @@
 .icon-beer::before {
   content: "\e2cf";
 }
+.icon-belarusian-ruble::before {
+  content: "\e7a6";
+}
 .icon-bell-check::before {
   content: "\e6ef";
 }
@@ -1008,6 +1011,9 @@
 }
 .icon-calendar-check::before {
   content: "\e2b7";
+}
+.icon-calendar-chevrons-left::before {
+  content: "\e7a7";
 }
 .icon-calendar-chevrons-right::before {
   content: "\e76c";
@@ -1420,6 +1426,9 @@
 .icon-circle-fading-arrow-up::before {
   content: "\e618";
 }
+.icon-circle-fading-play::before {
+  content: "\e7a8";
+}
 .icon-circle-fading-plus::before {
   content: "\e5bc";
 }
@@ -1821,6 +1830,9 @@
 }
 .icon-corner-up-right::before {
   content: "\e0a8";
+}
+.icon-cpu-ai::before {
+  content: "\e7a9";
 }
 .icon-cpu::before {
   content: "\e0a9";
@@ -2635,6 +2647,12 @@
 .icon-folder-up::before {
   content: "\e33d";
 }
+.icon-folder-user::before {
+  content: "\e7aa";
+}
+.icon-folder-users::before {
+  content: "\e7ab";
+}
 .icon-folder-x::before {
   content: "\e33e";
 }
@@ -2851,6 +2869,9 @@
 .icon-grape::before {
   content: "\e352";
 }
+.icon-graph-star::before {
+  content: "\e7ac";
+}
 .icon-grid-2-x-2-check::before {
   content: "\e5e4";
 }
@@ -2901,6 +2922,9 @@
 }
 .icon-group::before {
   content: "\e464";
+}
+.icon-guitar-electric::before {
+  content: "\e7ad";
 }
 .icon-guitar::before {
   content: "\e55f";
@@ -4317,6 +4341,9 @@
 }
 .icon-percent::before {
   content: "\e132";
+}
+.icon-perfume-bottle::before {
+  content: "\e7ae";
 }
 .icon-person-standing::before {
   content: "\e21e";
@@ -6147,6 +6174,12 @@
 }
 .icon-users-2::before {
   content: "\e46e";
+}
+.icon-users-collaboration::before {
+  content: "\e7af";
+}
+.icon-users-round-collaboration::before {
+  content: "\e7b0";
 }
 .icon-users-round::before {
   content: "\e46e";
