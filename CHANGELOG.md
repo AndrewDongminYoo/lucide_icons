@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.58.0 - 2026-10-16
+
+### Added
+
+- Updated icon set to lucide-static@1.58.0.
+- New icons: `certificate`, `eighthNote`, `eighthNotes`, `halfNote`, `sixteenthNotes`.
+
 ## 1.57.0 - 2026-10-14
 
 ### Added
