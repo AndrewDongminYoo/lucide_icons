@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.60.0 - 2026-10-20
+
+### Added
+
+- Updated icon set to lucide-static@1.60.0.
+- New icons: `avocado`, `bacon`, `brainOff`, `graphHub`, `letterSpacing`, `lineHeight`, `smartphoneUserRound`, `tombstone`.
+
 ## 1.59.0 - 2026-10-17
 
 ### Added

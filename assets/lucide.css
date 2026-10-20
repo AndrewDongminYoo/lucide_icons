@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1792217413794"); /* IE9*/
+  src: url("lucide.eot?t=1792476638516"); /* IE9*/
   src:
-    url("lucide.eot?t=1792217413794#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1792476638516#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1792217413794") format("woff2"),
-    url("lucide.woff?t=1792217413794") format("woff"),
-    url("lucide.ttf?t=1792217413794") format("truetype"),
-    url("lucide.svg?t=1792217413794") format("svg");
+    url("lucide.woff2?t=1792476638516") format("woff2"),
+    url("lucide.woff?t=1792476638516") format("woff"),
+    url("lucide.ttf?t=1792476638516") format("truetype"),
+    url("lucide.svg?t=1792476638516") format("svg");
 }
 
 [class^="icon-"],
@@ -463,6 +463,9 @@
 .icon-audio-waveform::before {
   content: "\e55b";
 }
+.icon-avocado::before {
+  content: "\e7b2";
+}
 .icon-award::before {
   content: "\e04f";
 }
@@ -480,6 +483,9 @@
 }
 .icon-backpack::before {
   content: "\e2c8";
+}
+.icon-bacon::before {
+  content: "\e7b3";
 }
 .icon-badge-alert::before {
   content: "\e475";
@@ -903,6 +909,9 @@
 }
 .icon-brain-cog::before {
   content: "\e3c8";
+}
+.icon-brain-off::before {
+  content: "\e7b4";
 }
 .icon-brain::before {
   content: "\e3c6";
@@ -2878,6 +2887,9 @@
 .icon-grape::before {
   content: "\e352";
 }
+.icon-graph-hub::before {
+  content: "\e7b5";
+}
 .icon-graph-star::before {
   content: "\e7ac";
 }
@@ -3385,6 +3397,9 @@
 .icon-lens::before {
   content: "\e79c";
 }
+.icon-letter-spacing::before {
+  content: "\e7b6";
+}
 .icon-letter-text::before {
   content: "\e605";
 }
@@ -3429,6 +3444,9 @@
 }
 .icon-line-dot-top-vertical::before {
   content: "\e78b";
+}
+.icon-line-height::before {
+  content: "\e7b7";
 }
 .icon-line-squiggle::before {
   content: "\e67a";
@@ -5188,6 +5206,9 @@
 .icon-smartphone-nfc::before {
   content: "\e3c4";
 }
+.icon-smartphone-user-round::before {
+  content: "\e7b8";
+}
 .icon-smartphone::before {
   content: "\e163";
 }
@@ -5877,6 +5898,9 @@
 }
 .icon-toilet::before {
   content: "\e635";
+}
+.icon-tombstone::before {
+  content: "\e7b9";
 }
 .icon-tool-case::before {
   content: "\e67d";
