@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.61.0 - 2026-10-21
+
+### Added
+
+- Updated icon set to lucide-static@1.61.0.
+- New icons: `circleChevronsDown`, `circleChevronsLeft`, `circleChevronsRight`, `circleChevronsUp`.
+
 ## 1.60.0 - 2026-10-20
 
 ### Added

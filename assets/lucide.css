@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1792476638516"); /* IE9*/
+  src: url("lucide.eot?t=1792563006623"); /* IE9*/
   src:
-    url("lucide.eot?t=1792476638516#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1792563006623#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1792476638516") format("woff2"),
-    url("lucide.woff?t=1792476638516") format("woff"),
-    url("lucide.ttf?t=1792476638516") format("truetype"),
-    url("lucide.svg?t=1792476638516") format("svg");
+    url("lucide.woff2?t=1792563006623") format("woff2"),
+    url("lucide.woff?t=1792563006623") format("woff"),
+    url("lucide.ttf?t=1792563006623") format("truetype"),
+    url("lucide.svg?t=1792563006623") format("svg");
 }
 
 [class^="icon-"],
@@ -1407,6 +1407,18 @@
 }
 .icon-circle-chevron-up::before {
   content: "\e4e0";
+}
+.icon-circle-chevrons-down::before {
+  content: "\e7ba";
+}
+.icon-circle-chevrons-left::before {
+  content: "\e7bb";
+}
+.icon-circle-chevrons-right::before {
+  content: "\e7bc";
+}
+.icon-circle-chevrons-up::before {
+  content: "\e7bd";
 }
 .icon-circle-dashed-check::before {
   content: "\e75e";
