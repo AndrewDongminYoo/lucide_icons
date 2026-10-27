@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.62.0 - 2026-10-27
+
+### Added
+
+- Updated icon set to lucide-static@1.62.0.
+- New icons: `azerbaijaniManat`, `ballWave`, `emiratiDirham`, `hockeyStick`, `hotAirBalloon`.
+
 ## 1.61.0 - 2026-10-21
 
 ### Added
