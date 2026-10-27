@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1792563006623"); /* IE9*/
+  src: url("lucide.eot?t=1793081411578"); /* IE9*/
   src:
-    url("lucide.eot?t=1792563006623#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1793081411578#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1792563006623") format("woff2"),
-    url("lucide.woff?t=1792563006623") format("woff"),
-    url("lucide.ttf?t=1792563006623") format("truetype"),
-    url("lucide.svg?t=1792563006623") format("svg");
+    url("lucide.woff2?t=1793081411578") format("woff2"),
+    url("lucide.woff?t=1793081411578") format("woff"),
+    url("lucide.ttf?t=1793081411578") format("truetype"),
+    url("lucide.svg?t=1793081411578") format("svg");
 }
 
 [class^="icon-"],
@@ -478,6 +478,9 @@
 .icon-axis-3d::before {
   content: "\e2fe";
 }
+.icon-azerbaijani-manat::before {
+  content: "\e7be";
+}
 .icon-baby::before {
   content: "\e2ce";
 }
@@ -546,6 +549,9 @@
 }
 .icon-baggage-claim::before {
   content: "\e2c9";
+}
+.icon-ball-wave::before {
+  content: "\e7bf";
 }
 .icon-balloon::before {
   content: "\e6af";
@@ -2152,6 +2158,9 @@
 .icon-ellipsis::before {
   content: "\e0b6";
 }
+.icon-emirati-dirham::before {
+  content: "\e7c0";
+}
 .icon-engine::before {
   content: "\e758";
 }
@@ -3112,6 +3121,9 @@
 .icon-history::before {
   content: "\e1f5";
 }
+.icon-hockey-stick::before {
+  content: "\e7c1";
+}
 .icon-home::before {
   content: "\e0f5";
 }
@@ -3123,6 +3135,9 @@
 }
 .icon-hospital::before {
   content: "\e5d8";
+}
+.icon-hot-air-balloon::before {
+  content: "\e7c2";
 }
 .icon-hotel::before {
   content: "\e3e2";
