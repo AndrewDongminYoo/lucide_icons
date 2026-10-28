@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1793081411578"); /* IE9*/
+  src: url("lucide.eot?t=1793167705978"); /* IE9*/
   src:
-    url("lucide.eot?t=1793081411578#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1793167705978#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1793081411578") format("woff2"),
-    url("lucide.woff?t=1793081411578") format("woff"),
-    url("lucide.ttf?t=1793081411578") format("truetype"),
-    url("lucide.svg?t=1793081411578") format("svg");
+    url("lucide.woff2?t=1793167705978") format("woff2"),
+    url("lucide.woff?t=1793167705978") format("woff"),
+    url("lucide.ttf?t=1793167705978") format("truetype"),
+    url("lucide.svg?t=1793167705978") format("svg");
 }
 
 [class^="icon-"],
@@ -204,6 +204,12 @@
 }
 .icon-apple::before {
   content: "\e34e";
+}
+.icon-archive-arrow-down::before {
+  content: "\e7c3";
+}
+.icon-archive-arrow-up::before {
+  content: "\e2cd";
 }
 .icon-archive-restore::before {
   content: "\e2cd";
@@ -901,6 +907,9 @@
 .icon-box::before {
   content: "\e061";
 }
+.icon-boxes-linked::before {
+  content: "\e7c4";
+}
 .icon-boxes::before {
   content: "\e2d0";
 }
@@ -1017,6 +1026,12 @@
 }
 .icon-calendar-arrow-down::before {
   content: "\e5fe";
+}
+.icon-calendar-arrow-left::before {
+  content: "\e7c5";
+}
+.icon-calendar-arrow-right::before {
+  content: "\e7c6";
 }
 .icon-calendar-arrow-up::before {
   content: "\e5ff";
@@ -1239,6 +1254,12 @@
 }
 .icon-chart-pie::before {
   content: "\e06b";
+}
+.icon-chart-quadrant::before {
+  content: "\e7c7";
+}
+.icon-chart-radar::before {
+  content: "\e7c8";
 }
 .icon-chart-scatter::before {
   content: "\e48a";
@@ -1936,6 +1957,9 @@
 .icon-database-check::before {
   content: "\e718";
 }
+.icon-database-cog::before {
+  content: "\e7c9";
+}
 .icon-database-minus::before {
   content: "\e719";
 }
@@ -2112,6 +2136,12 @@
 }
 .icon-ear::before {
   content: "\e382";
+}
+.icon-earbuds-off::before {
+  content: "\e7ca";
+}
+.icon-earbuds::before {
+  content: "\e7cb";
 }
 .icon-earth-lock::before {
   content: "\e5cc";
@@ -3336,6 +3366,9 @@
 }
 .icon-laptop::before {
   content: "\e1cd";
+}
+.icon-laser::before {
+  content: "\e7cc";
 }
 .icon-lasso-select::before {
   content: "\e1cf";
@@ -5194,6 +5227,9 @@
 .icon-signpost::before {
   content: "\e540";
 }
+.icon-siren-off::before {
+  content: "\e7cd";
+}
 .icon-siren::before {
   content: "\e2ef";
 }
@@ -5403,6 +5439,18 @@
 }
 .icon-square-chevron-up::before {
   content: "\e3d2";
+}
+.icon-square-chevrons-down::before {
+  content: "\e7ce";
+}
+.icon-square-chevrons-left::before {
+  content: "\e7cf";
+}
+.icon-square-chevrons-right::before {
+  content: "\e7d0";
+}
+.icon-square-chevrons-up::before {
+  content: "\e7d1";
 }
 .icon-square-code::before {
   content: "\e16b";
@@ -6204,6 +6252,9 @@
 }
 .icon-user-round-search::before {
   content: "\e578";
+}
+.icon-user-round-shield::before {
+  content: "\e7d2";
 }
 .icon-user-round-star::before {
   content: "\e7a2";
