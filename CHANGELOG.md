@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.63.0 - 2026-10-28
+
+### Added
+
+- Updated icon set to lucide-static@1.63.0.
+- New icons: `archiveArrowDown`, `archiveArrowUp`, `boxesLinked`, `calendarArrowLeft`, `calendarArrowRight`, `chartQuadrant`, `chartRadar`, `databaseCog`, `earbuds`, `earbudsOff`, `laser`, `sirenOff`, `squareChevronsDown`, `squareChevronsLeft`, `squareChevronsRight`, `squareChevronsUp`, `userRoundShield`.
+
 ## 1.62.0 - 2026-10-27
 
 ### Added
