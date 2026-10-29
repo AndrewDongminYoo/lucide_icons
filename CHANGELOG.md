@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.64.0 - 2026-10-29
+
+### Added
+
+- Updated icon set to lucide-static@1.64.0.
+- New icons: `circleLetterA`, `circleLetterB`, `circleLetterC`, `circleLetterD`, `circleLetterE`, `circleLetterF`, `circleLetterG`, `circleLetterH`, `circleLetterI`, `circleLetterJ`, `circleLetterK`, `circleLetterL`, `circleLetterM`, `circleLetterN`, `circleLetterO`, `circleLetterP`, `circleLetterPOff`, `circleLetterQ`, `circleLetterR`, `circleLetterS`, `circleLetterT`, `circleLetterU`, `circleLetterV`, `circleLetterW`, `circleLetterX`, `circleLetterY`, `circleLetterZ`, `letterA`, `letterB`, `letterC`, `letterD`, `letterE`, `letterF`, `letterG`, `letterH`, `letterI`, `letterJ`, `letterK`, `letterL`, `letterM`, `letterN`, `letterO`, `letterP`, `letterQ`, `letterR`, `letterS`, `letterT`, `letterU`, `letterV`, `letterW`, `letterX`, `letterY`, `letterZ`, `numbers`, `squareKanbanPlus`, `squareLetterA`, `squareLetterB`, `squareLetterC`, `squareLetterD`, `squareLetterE`, `squareLetterF`, `squareLetterG`, `squareLetterH`, `squareLetterI`, `squareLetterJ`, `squareLetterK`, `squareLetterL`, `squareLetterM`, `squareLetterN`, `squareLetterO`, `squareLetterP`, `squareLetterPOff`, `squareLetterQ`, `squareLetterR`, `squareLetterS`, `squareLetterT`, `squareLetterU`, `squareLetterV`, `squareLetterW`, `squareLetterX`, `squareLetterY`, `squareLetterZ`.
+
 ## 1.63.0 - 2026-10-28
 
 ### Added
