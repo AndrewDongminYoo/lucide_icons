@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1793340576856"); /* IE9*/
+  src: url("lucide.eot?t=1793426877242"); /* IE9*/
   src:
-    url("lucide.eot?t=1793340576856#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1793426877242#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1793340576856") format("woff2"),
-    url("lucide.woff?t=1793340576856") format("woff"),
-    url("lucide.ttf?t=1793340576856") format("truetype"),
-    url("lucide.svg?t=1793340576856") format("svg");
+    url("lucide.woff2?t=1793426877242") format("woff2"),
+    url("lucide.woff?t=1793426877242") format("woff"),
+    url("lucide.ttf?t=1793426877242") format("truetype"),
+    url("lucide.svg?t=1793426877242") format("svg");
 }
 
 [class^="icon-"],
@@ -1209,6 +1209,9 @@
 }
 .icon-chart-bar::before {
   content: "\e2a2";
+}
+.icon-chart-bell-curve::before {
+  content: "\e81e";
 }
 .icon-chart-candlestick::before {
   content: "\e4a8";
@@ -2436,6 +2439,9 @@
 }
 .icon-file-cog::before {
   content: "\e316";
+}
+.icon-file-database::before {
+  content: "\e81f";
 }
 .icon-file-diff::before {
   content: "\e317";
@@ -3910,6 +3916,27 @@
 .icon-map::before {
   content: "\e110";
 }
+.icon-margin-bottom::before {
+  content: "\e820";
+}
+.icon-margin-horizontal::before {
+  content: "\e821";
+}
+.icon-margin-left::before {
+  content: "\e822";
+}
+.icon-margin-right::before {
+  content: "\e823";
+}
+.icon-margin-top::before {
+  content: "\e824";
+}
+.icon-margin-vertical::before {
+  content: "\e825";
+}
+.icon-margin::before {
+  content: "\e826";
+}
 .icon-mars-stroke::before {
   content: "\e642";
 }
@@ -4113,6 +4140,9 @@
 }
 .icon-mirror-round::before {
   content: "\e6be";
+}
+.icon-monitor-activity::before {
+  content: "\e827";
 }
 .icon-monitor-check::before {
   content: "\e482";
@@ -5772,6 +5802,27 @@
 }
 .icon-square-off::before {
   content: "\e728";
+}
+.icon-square-padding-bottom::before {
+  content: "\e828";
+}
+.icon-square-padding-horizontal::before {
+  content: "\e829";
+}
+.icon-square-padding-left::before {
+  content: "\e82a";
+}
+.icon-square-padding-right::before {
+  content: "\e82b";
+}
+.icon-square-padding-top::before {
+  content: "\e82c";
+}
+.icon-square-padding-vertical::before {
+  content: "\e82d";
+}
+.icon-square-padding::before {
+  content: "\e82e";
 }
 .icon-square-parking-off::before {
   content: "\e3cc";
