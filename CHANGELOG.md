@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.66.0 - 2026-10-31
+
+### Added
+
+- Updated icon set to lucide-static@1.66.0.
+- New icons: `chartBellCurve`, `fileDatabase`, `margin`, `marginBottom`, `marginHorizontal`, `marginLeft`, `marginRight`, `marginTop`, `marginVertical`, `monitorActivity`, `squarePadding`, `squarePaddingBottom`, `squarePaddingHorizontal`, `squarePaddingLeft`, `squarePaddingRight`, `squarePaddingTop`, `squarePaddingVertical`.
+
 ## 1.65.0 - 2026-10-30
 
 ### Added
