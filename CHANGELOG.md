@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.67.0 - 2026-11-03
+
+### Added
+
+- Updated icon set to lucide-static@1.67.0.
+- New icons: `diagramFlowHorizontal`, `diagramFlowVertical`, `globeBan`, `globePlus`.
+
 ## 1.66.0 - 2026-10-31
 
 ### Added
