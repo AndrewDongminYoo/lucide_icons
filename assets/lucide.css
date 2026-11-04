@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1793686062293"); /* IE9*/
+  src: url("lucide.eot?t=1793772448960"); /* IE9*/
   src:
-    url("lucide.eot?t=1793686062293#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1793772448960#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1793686062293") format("woff2"),
-    url("lucide.woff?t=1793686062293") format("woff"),
-    url("lucide.ttf?t=1793686062293") format("truetype"),
-    url("lucide.svg?t=1793686062293") format("svg");
+    url("lucide.woff2?t=1793772448960") format("woff2"),
+    url("lucide.woff?t=1793772448960") format("woff"),
+    url("lucide.ttf?t=1793772448960") format("truetype"),
+    url("lucide.svg?t=1793772448960") format("svg");
 }
 
 [class^="icon-"],
@@ -511,6 +511,9 @@
 .icon-badge-euro::before {
   content: "\e510";
 }
+.icon-badge-exclamation-point::before {
+  content: "\e475";
+}
 .icon-badge-help::before {
   content: "\e47b";
 }
@@ -624,6 +627,9 @@
 }
 .icon-battery-charging::before {
   content: "\e054";
+}
+.icon-battery-exclamation-point::before {
+  content: "\e3ac";
 }
 .icon-battery-full::before {
   content: "\e055";
@@ -804,6 +810,9 @@
 }
 .icon-book-down::before {
   content: "\e3ee";
+}
+.icon-book-exclamation-point::before {
+  content: "\e672";
 }
 .icon-book-headphones::before {
   content: "\e547";
@@ -1477,6 +1486,9 @@
 .icon-circle-euro::before {
   content: "\e71f";
 }
+.icon-circle-exclamation-point::before {
+  content: "\e077";
+}
 .icon-circle-fading-arrow-up::before {
   content: "\e618";
 }
@@ -1753,6 +1765,9 @@
 .icon-clock-check::before {
   content: "\e69e";
 }
+.icon-clock-exclamation-point::before {
+  content: "\e62a";
+}
 .icon-clock-fading::before {
   content: "\e64a";
 }
@@ -1782,6 +1797,9 @@
 }
 .icon-cloud-drizzle::before {
   content: "\e08a";
+}
+.icon-cloud-exclamation-point::before {
+  content: "\e633";
 }
 .icon-cloud-fog::before {
   content: "\e214";
@@ -3829,6 +3847,9 @@
 .icon-magnet::before {
   content: "\e2b5";
 }
+.icon-mail-alert::before {
+  content: "\e367";
+}
 .icon-mail-badge::before {
   content: "\e734";
 }
@@ -3840,6 +3861,9 @@
 }
 .icon-mail-dot::before {
   content: "\e79e";
+}
+.icon-mail-exclamation-point::before {
+  content: "\e367";
 }
 .icon-mail-minus::before {
   content: "\e362";
@@ -3876,6 +3900,9 @@
 }
 .icon-mails::before {
   content: "\e369";
+}
+.icon-mango::before {
+  content: "\e833";
 }
 .icon-map-minus::before {
   content: "\e686";
@@ -3988,6 +4015,9 @@
 .icon-merge::before {
   content: "\e43f";
 }
+.icon-message-circle-alert::before {
+  content: "\e56a";
+}
 .icon-message-circle-check::before {
   content: "\e6ba";
 }
@@ -3999,6 +4029,9 @@
 }
 .icon-message-circle-dashed::before {
   content: "\e563";
+}
+.icon-message-circle-exclamation-point::before {
+  content: "\e56a";
 }
 .icon-message-circle-heart::before {
   content: "\e564";
@@ -4033,6 +4066,9 @@
 .icon-message-circle::before {
   content: "\e116";
 }
+.icon-message-square-alert::before {
+  content: "\e576";
+}
 .icon-message-square-check::before {
   content: "\e6bb";
 }
@@ -4047,6 +4083,9 @@
 }
 .icon-message-square-dot::before {
   content: "\e56e";
+}
+.icon-message-square-exclamation-point::before {
+  content: "\e576";
 }
 .icon-message-square-heart::before {
   content: "\e56f";
@@ -4382,6 +4421,9 @@
   content: "\e39b";
 }
 .icon-octagon-alert::before {
+  content: "\e127";
+}
+.icon-octagon-exclamation-point::before {
   content: "\e127";
 }
 .icon-octagon-minus::before {
@@ -5212,6 +5254,9 @@
 .icon-search-code::before {
   content: "\e4ab";
 }
+.icon-search-exclamation-point::before {
+  content: "\e6e7";
+}
 .icon-search-slash::before {
   content: "\e4ac";
 }
@@ -5304,6 +5349,9 @@
 }
 .icon-shield-ellipsis::before {
   content: "\e516";
+}
+.icon-shield-exclamation-point::before {
+  content: "\e1fe";
 }
 .icon-shield-half::before {
   content: "\e517";
@@ -6381,6 +6429,9 @@
 }
 .icon-triangle-dashed::before {
   content: "\e63d";
+}
+.icon-triangle-exclamation-point::before {
+  content: "\e193";
 }
 .icon-triangle-right::before {
   content: "\e4ed";

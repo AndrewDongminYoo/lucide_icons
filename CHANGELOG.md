@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.68.0 - 2026-11-04
+
+### Added
+
+- Updated icon set to lucide-static@1.68.0.
+- New icons: `badgeExclamationPoint`, `batteryExclamationPoint`, `bookExclamationPoint`, `circleExclamationPoint`, `clockExclamationPoint`, `cloudExclamationPoint`, `mailAlert`, `mailExclamationPoint`, `mango`, `messageCircleAlert`, `messageCircleExclamationPoint`, `messageSquareAlert`, `messageSquareExclamationPoint`, `octagonExclamationPoint`, `searchExclamationPoint`, `shieldExclamationPoint`, `triangleExclamationPoint`.
+
 ## 1.67.0 - 2026-11-03
 
 ### Added
