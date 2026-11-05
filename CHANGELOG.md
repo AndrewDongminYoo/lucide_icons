@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.69.0 - 2026-11-05
+
+### Added
+
+- Updated icon set to lucide-static@1.69.0.
+- New icons: `circleFadingCheck`, `opacity`, `packagePen`, `packageQuestionMark`.
+
 ## 1.68.0 - 2026-11-04
 
 ### Added
