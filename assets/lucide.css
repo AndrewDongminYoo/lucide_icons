@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1793772448960"); /* IE9*/
+  src: url("lucide.eot?t=1793858935705"); /* IE9*/
   src:
-    url("lucide.eot?t=1793772448960#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1793858935705#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1793772448960") format("woff2"),
-    url("lucide.woff?t=1793772448960") format("woff"),
-    url("lucide.ttf?t=1793772448960") format("truetype"),
-    url("lucide.svg?t=1793772448960") format("svg");
+    url("lucide.woff2?t=1793858935705") format("woff2"),
+    url("lucide.woff?t=1793858935705") format("woff"),
+    url("lucide.ttf?t=1793858935705") format("truetype"),
+    url("lucide.svg?t=1793858935705") format("svg");
 }
 
 [class^="icon-"],
@@ -1491,6 +1491,9 @@
 }
 .icon-circle-fading-arrow-up::before {
   content: "\e618";
+}
+.icon-circle-fading-check::before {
+  content: "\e834";
 }
 .icon-circle-fading-play::before {
   content: "\e7a8";
@@ -4441,6 +4444,9 @@
 .icon-omega::before {
   content: "\e619";
 }
+.icon-opacity::before {
+  content: "\e835";
+}
 .icon-option::before {
   content: "\e1f8";
 }
@@ -4465,8 +4471,14 @@
 .icon-package-open::before {
   content: "\e2cc";
 }
+.icon-package-pen::before {
+  content: "\e836";
+}
 .icon-package-plus::before {
   content: "\e268";
+}
+.icon-package-question-mark::before {
+  content: "\e837";
 }
 .icon-package-search::before {
   content: "\e269";
