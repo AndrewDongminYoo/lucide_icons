@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.70.0 - 2026-11-06
+
+### Added
+
+- Updated icon set to lucide-static@1.70.0.
+- New icons: `grid3x3Off`, `moped`, `squareDashedSearch`, `userExclamationPoint`, `userRoundExclamationPoint`.
+
 ## 1.69.0 - 2026-11-05
 
 ### Added

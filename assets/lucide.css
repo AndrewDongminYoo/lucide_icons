@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1793858935705"); /* IE9*/
+  src: url("lucide.eot?t=1793945260166"); /* IE9*/
   src:
-    url("lucide.eot?t=1793858935705#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1793945260166#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1793858935705") format("woff2"),
-    url("lucide.woff?t=1793858935705") format("woff"),
-    url("lucide.ttf?t=1793858935705") format("truetype"),
-    url("lucide.svg?t=1793858935705") format("svg");
+    url("lucide.woff2?t=1793945260166") format("woff2"),
+    url("lucide.woff?t=1793945260166") format("woff"),
+    url("lucide.ttf?t=1793945260166") format("truetype"),
+    url("lucide.svg?t=1793945260166") format("svg");
 }
 
 [class^="icon-"],
@@ -3094,6 +3094,9 @@
 .icon-grid-3x2::before {
   content: "\e66f";
 }
+.icon-grid-3x3-off::before {
+  content: "\e838";
+}
 .icon-grid-3x3::before {
   content: "\e0e9";
 }
@@ -4254,6 +4257,9 @@
 }
 .icon-mop::before {
   content: "\e73b";
+}
+.icon-moped::before {
+  content: "\e839";
 }
 .icon-more-horizontal::before {
   content: "\e0b6";
@@ -5734,6 +5740,9 @@
 .icon-square-dashed-plus::before {
   content: "\e783";
 }
+.icon-square-dashed-search::before {
+  content: "\e83a";
+}
 .icon-square-dashed-text::before {
   content: "\e6ea";
 }
@@ -6574,6 +6583,9 @@
 .icon-user-cog::before {
   content: "\e342";
 }
+.icon-user-exclamation-point::before {
+  content: "\e83b";
+}
 .icon-user-group::before {
   content: "\e764";
 }
@@ -6606,6 +6618,9 @@
 }
 .icon-user-round-cog::before {
   content: "\e46a";
+}
+.icon-user-round-exclamation-point::before {
+  content: "\e83c";
 }
 .icon-user-round-group::before {
   content: "\e765";
