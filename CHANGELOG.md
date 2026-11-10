@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.71.0 - 2026-11-10
+
+### Added
+
+- Updated icon set to lucide-static@1.71.0.
+- New icons: `cheese`, `circleArrowDownLeftExit`, `circleArrowDownRightExit`, `circleArrowUpLeftExit`, `circleArrowUpRightExit`, `grid3X2`, `grid3X3Off`, `printer3D`, `squareArrowDownEnter`, `squareArrowDownExit`, `squareArrowDownLeftEnter`, `squareArrowDownLeftExit`, `squareArrowDownRightEnter`, `squareArrowDownRightExit`, `squareArrowLeftEnter`, `squareArrowLeftExit`, `squareArrowUpEnter`, `squareArrowUpExit`, `squareArrowUpLeftEnter`, `squareArrowUpLeftExit`, `squareArrowUpRightEnter`, `squareArrowUpRightExit`, `strokeLineCapButt`, `strokeLineCapRound`, `strokeLineCapSquare`, `strokeLineJoinBevel`, `strokeLineJoinMiter`, `strokeLineJoinRound`.
+
 ## 1.70.0 - 2026-11-06
 
 ### Added
