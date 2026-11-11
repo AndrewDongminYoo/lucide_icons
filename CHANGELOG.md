@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.72.0 - 2026-11-11
+
+### Added
+
+- Updated icon set to lucide-static@1.72.0.
+- New icons: `asterism`, `exclamationMark`, `moundShovel`, `questionMark`, `routeArrowRight`, `textPen`.
+
 ## 1.71.0 - 2026-11-10
 
 ### Added
