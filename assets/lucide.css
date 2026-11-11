@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1794290927477"); /* IE9*/
+  src: url("lucide.eot?t=1794377363075"); /* IE9*/
   src:
-    url("lucide.eot?t=1794290927477#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1794377363075#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1794290927477") format("woff2"),
-    url("lucide.woff?t=1794290927477") format("woff"),
-    url("lucide.ttf?t=1794290927477") format("truetype"),
-    url("lucide.svg?t=1794290927477") format("svg");
+    url("lucide.woff2?t=1794377363075") format("woff2"),
+    url("lucide.woff?t=1794377363075") format("woff"),
+    url("lucide.ttf?t=1794377363075") format("truetype"),
+    url("lucide.svg?t=1794377363075") format("svg");
 }
 
 [class^="icon-"],
@@ -447,6 +447,9 @@
 }
 .icon-asterisk::before {
   content: "\e1ef";
+}
+.icon-asterism::before {
+  content: "\e84e";
 }
 .icon-astroid::before {
   content: "\e6f0";
@@ -2346,6 +2349,9 @@
 }
 .icon-ev-charger::before {
   content: "\e697";
+}
+.icon-exclamation-mark::before {
+  content: "\e84f";
 }
 .icon-expand::before {
   content: "\e21a";
@@ -4294,6 +4300,9 @@
 .icon-motorbike::before {
   content: "\e698";
 }
+.icon-mound-shovel::before {
+  content: "\e850";
+}
 .icon-mountain-snow::before {
   content: "\e232";
 }
@@ -4930,6 +4939,9 @@
 .icon-qr-code::before {
   content: "\e1df";
 }
+.icon-question-mark::before {
+  content: "\e851";
+}
 .icon-quote::before {
   content: "\e239";
 }
@@ -5127,6 +5139,9 @@
 }
 .icon-rotate-cw::before {
   content: "\e149";
+}
+.icon-route-arrow-right::before {
+  content: "\e852";
 }
 .icon-route-off::before {
   content: "\e53f";
@@ -6348,6 +6363,9 @@
 }
 .icon-text-initial::before {
   content: "\e605";
+}
+.icon-text-pen::before {
+  content: "\e853";
 }
 .icon-text-quote::before {
   content: "\e49e";
