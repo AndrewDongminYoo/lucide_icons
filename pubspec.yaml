@@ -16,12 +16,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  material_ui: ^1.11.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   import_sorter: ^4.6.0
-  merry: ^2.4.0
+  merry: ^2.5.0
   very_good_analysis: ^11.0.0
 
 scripts:
