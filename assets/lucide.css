@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1794377363075"); /* IE9*/
+  src: url("lucide.eot?t=1794636507934"); /* IE9*/
   src:
-    url("lucide.eot?t=1794377363075#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1794636507934#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1794377363075") format("woff2"),
-    url("lucide.woff?t=1794377363075") format("woff"),
-    url("lucide.ttf?t=1794377363075") format("truetype"),
-    url("lucide.svg?t=1794377363075") format("svg");
+    url("lucide.woff2?t=1794636507934") format("woff2"),
+    url("lucide.woff?t=1794636507934") format("woff"),
+    url("lucide.ttf?t=1794636507934") format("truetype"),
+    url("lucide.svg?t=1794636507934") format("svg");
 }
 
 [class^="icon-"],
@@ -1140,6 +1140,9 @@
 }
 .icon-cannabis::before {
   content: "\e5d4";
+}
+.icon-cap::before {
+  content: "\e854";
 }
 .icon-captions-off::before {
   content: "\e5c1";
@@ -3082,6 +3085,9 @@
 .icon-graph-hub::before {
   content: "\e7b5";
 }
+.icon-graph-ring::before {
+  content: "\e855";
+}
 .icon-graph-star::before {
   content: "\e7ac";
 }
@@ -3570,6 +3576,9 @@
 }
 .icon-layout-grid-circles::before {
   content: "\e790";
+}
+.icon-layout-grid-plus::before {
+  content: "\e856";
 }
 .icon-layout-grid::before {
   content: "\e0ff";
