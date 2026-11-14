@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.73.0 - 2026-11-14
+
+### Added
+
+- Updated icon set to lucide-static@1.73.0.
+- New icons: `cap`, `graphRing`, `layoutGridPlus`.
+
 ## 1.72.0 - 2026-11-11
 
 ### Added
