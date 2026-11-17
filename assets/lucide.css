@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1794636507934"); /* IE9*/
+  src: url("lucide.eot?t=1794895638491"); /* IE9*/
   src:
-    url("lucide.eot?t=1794636507934#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1794895638491#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1794636507934") format("woff2"),
-    url("lucide.woff?t=1794636507934") format("woff"),
-    url("lucide.ttf?t=1794636507934") format("truetype"),
-    url("lucide.svg?t=1794636507934") format("svg");
+    url("lucide.woff2?t=1794895638491") format("woff2"),
+    url("lucide.woff?t=1794895638491") format("woff"),
+    url("lucide.ttf?t=1794895638491") format("truetype"),
+    url("lucide.svg?t=1794895638491") format("svg");
 }
 
 [class^="icon-"],
@@ -438,6 +438,30 @@
 }
 .icon-arrow-up::before {
   content: "\e04a";
+}
+.icon-arrows-from-axis-dashed-horizontal::before {
+  content: "\e43e";
+}
+.icon-arrows-from-axis-dashed-vertical::before {
+  content: "\e43d";
+}
+.icon-arrows-from-axis-horizontal::before {
+  content: "\e857";
+}
+.icon-arrows-from-axis-vertical::before {
+  content: "\e858";
+}
+.icon-arrows-to-axis-dashed-horizontal::before {
+  content: "\e43c";
+}
+.icon-arrows-to-axis-dashed-vertical::before {
+  content: "\e43b";
+}
+.icon-arrows-to-axis-horizontal::before {
+  content: "\e859";
+}
+.icon-arrows-to-axis-vertical::before {
+  content: "\e85a";
 }
 .icon-arrows-up-from-line::before {
   content: "\e4d4";
@@ -898,11 +922,23 @@
 .icon-boom-box::before {
   content: "\e4ee";
 }
+.icon-bot-check::before {
+  content: "\e85b";
+}
 .icon-bot-message-square::before {
   content: "\e5ce";
 }
+.icon-bot-minus::before {
+  content: "\e85c";
+}
 .icon-bot-off::before {
   content: "\e5e0";
+}
+.icon-bot-plus::before {
+  content: "\e85d";
+}
+.icon-bot-x::before {
+  content: "\e85e";
 }
 .icon-bot::before {
   content: "\e1bb";
@@ -1168,6 +1204,30 @@
 .icon-card-sim::before {
   content: "\e671";
 }
+.icon-carets-from-axis-dashed-horizontal::before {
+  content: "\e85f";
+}
+.icon-carets-from-axis-dashed-vertical::before {
+  content: "\e860";
+}
+.icon-carets-from-axis-horizontal::before {
+  content: "\e861";
+}
+.icon-carets-from-axis-vertical::before {
+  content: "\e862";
+}
+.icon-carets-to-axis-dashed-horizontal::before {
+  content: "\e35e";
+}
+.icon-carets-to-axis-dashed-vertical::before {
+  content: "\e360";
+}
+.icon-carets-to-axis-horizontal::before {
+  content: "\e863";
+}
+.icon-carets-to-axis-vertical::before {
+  content: "\e864";
+}
 .icon-carrot::before {
   content: "\e25a";
 }
@@ -1381,6 +1441,18 @@
 .icon-chevrons-down::before {
   content: "\e071";
 }
+.icon-chevrons-from-axis-dashed-horizontal::before {
+  content: "\e865";
+}
+.icon-chevrons-from-axis-dashed-vertical::before {
+  content: "\e866";
+}
+.icon-chevrons-from-axis-horizontal::before {
+  content: "\e867";
+}
+.icon-chevrons-from-axis-vertical::before {
+  content: "\e868";
+}
 .icon-chevrons-left-right-ellipsis::before {
   content: "\e61f";
 }
@@ -1396,6 +1468,18 @@
 .icon-chevrons-right::before {
   content: "\e073";
 }
+.icon-chevrons-to-axis-dashed-horizontal::before {
+  content: "\e869";
+}
+.icon-chevrons-to-axis-dashed-vertical::before {
+  content: "\e86a";
+}
+.icon-chevrons-to-axis-horizontal::before {
+  content: "\e86b";
+}
+.icon-chevrons-to-axis-vertical::before {
+  content: "\e86c";
+}
 .icon-chevrons-up-down::before {
   content: "\e211";
 }
@@ -1410,6 +1494,9 @@
 }
 .icon-cigarette::before {
   content: "\e2c6";
+}
+.icon-cinema::before {
+  content: "\e86d";
 }
 .icon-circle-alert::before {
   content: "\e077";
@@ -1449,6 +1536,9 @@
 }
 .icon-circle-arrow-up::before {
   content: "\e07b";
+}
+.icon-circle-bounce::before {
+  content: "\e86e";
 }
 .icon-circle-check-big::before {
   content: "\e07c";
@@ -1626,6 +1716,9 @@
 }
 .icon-circle-percent::before {
   content: "\e51a";
+}
+.icon-circle-person-arms-spread::before {
+  content: "\e86f";
 }
 .icon-circle-pile::before {
   content: "\e6e1";
@@ -2193,6 +2286,9 @@
 }
 .icon-dog::before {
   content: "\e38d";
+}
+.icon-doghouse::before {
+  content: "\e870";
 }
 .icon-dollar-sign::before {
   content: "\e0b1";
@@ -3190,6 +3286,9 @@
 .icon-hand-platter::before {
   content: "\e5ba";
 }
+.icon-hand-truck::before {
+  content: "\e871";
+}
 .icon-hand::before {
   content: "\e1d7";
 }
@@ -3333,6 +3432,12 @@
 }
 .icon-hourglass::before {
   content: "\e296";
+}
+.icon-house-arrow-left::before {
+  content: "\e872";
+}
+.icon-house-arrow-right::before {
+  content: "\e873";
 }
 .icon-house-cog::before {
   content: "\e788";
@@ -4434,6 +4539,9 @@
 }
 .icon-nfc::before {
   content: "\e3c3";
+}
+.icon-nigerian-naira::before {
+  content: "\e874";
 }
 .icon-non-binary::before {
   content: "\e643";
@@ -5767,6 +5875,18 @@
 .icon-square-asterisk::before {
   content: "\e168";
 }
+.icon-square-axis-dashed-horizontal::before {
+  content: "\e35f";
+}
+.icon-square-axis-dashed-vertical::before {
+  content: "\e35d";
+}
+.icon-square-axis-horizontal::before {
+  content: "\e875";
+}
+.icon-square-axis-vertical::before {
+  content: "\e876";
+}
 .icon-square-bookmark::before {
   content: "\e03b";
 }
@@ -6195,6 +6315,9 @@
 }
 .icon-stroke-line-join-round::before {
   content: "\e84d";
+}
+.icon-stroke-width::before {
+  content: "\e877";
 }
 .icon-subscript::before {
   content: "\e25c";
@@ -6912,6 +7035,9 @@
 }
 .icon-wand::before {
   content: "\e246";
+}
+.icon-warehouse-waves::before {
+  content: "\e878";
 }
 .icon-warehouse::before {
   content: "\e3e6";

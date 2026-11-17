@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.74.0 - 2026-11-17
+
+### Added
+
+- Updated icon set to lucide-static@1.74.0.
+- New icons: `arrowsFromAxisDashedHorizontal`, `arrowsFromAxisDashedVertical`, `arrowsFromAxisHorizontal`, `arrowsFromAxisVertical`, `arrowsToAxisDashedHorizontal`, `arrowsToAxisDashedVertical`, `arrowsToAxisHorizontal`, `arrowsToAxisVertical`, `botCheck`, `botMinus`, `botPlus`, `botX`, `caretsFromAxisDashedHorizontal`, `caretsFromAxisDashedVertical`, `caretsFromAxisHorizontal`, `caretsFromAxisVertical`, `caretsToAxisDashedHorizontal`, `caretsToAxisDashedVertical`, `caretsToAxisHorizontal`, `caretsToAxisVertical`, `chevronsFromAxisDashedHorizontal`, `chevronsFromAxisDashedVertical`, `chevronsFromAxisHorizontal`, `chevronsFromAxisVertical`, `chevronsToAxisDashedHorizontal`, `chevronsToAxisDashedVertical`, `chevronsToAxisHorizontal`, `chevronsToAxisVertical`, `cinema`, `circleBounce`, `circlePersonArmsSpread`, `doghouse`, `handTruck`, `houseArrowLeft`, `houseArrowRight`, `nigerianNaira`, `squareAxisDashedHorizontal`, `squareAxisDashedVertical`, `squareAxisHorizontal`, `squareAxisVertical`, `strokeWidth`, `warehouseWaves`.
+
 ## 1.73.0 - 2026-11-14
 
 ### Added
