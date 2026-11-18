@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1794895638491"); /* IE9*/
+  src: url("lucide.eot?t=1794982145894"); /* IE9*/
   src:
-    url("lucide.eot?t=1794895638491#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1794982145894#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1794895638491") format("woff2"),
-    url("lucide.woff?t=1794895638491") format("woff"),
-    url("lucide.ttf?t=1794895638491") format("truetype"),
-    url("lucide.svg?t=1794895638491") format("svg");
+    url("lucide.woff2?t=1794982145894") format("woff2"),
+    url("lucide.woff?t=1794982145894") format("woff"),
+    url("lucide.ttf?t=1794982145894") format("truetype"),
+    url("lucide.svg?t=1794982145894") format("svg");
 }
 
 [class^="icon-"],
@@ -3547,6 +3547,9 @@
 .icon-iv-bag::before {
   content: "\e770";
 }
+.icon-jacket::before {
+  content: "\e879";
+}
 .icon-japanese-yen::before {
   content: "\e0fc";
 }
@@ -4644,6 +4647,9 @@
 }
 .icon-paint-bucket::before {
   content: "\e2e6";
+}
+.icon-paint-gun::before {
+  content: "\e87a";
 }
 .icon-paint-roller::before {
   content: "\e59e";

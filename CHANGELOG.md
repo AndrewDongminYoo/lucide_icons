@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.75.0 - 2026-11-18
+
+### Added
+
+- Updated icon set to lucide-static@1.75.0.
+- New icons: `jacket`, `paintGun`.
+
 ## 1.74.0 - 2026-11-17
 
 ### Added
