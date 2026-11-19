@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.76.0 - 2026-11-19
+
+### Added
+
+- Updated icon set to lucide-static@1.76.0.
+- New icons: `diagramSankey`.
+
 ## 1.75.0 - 2026-11-18
 
 ### Added
