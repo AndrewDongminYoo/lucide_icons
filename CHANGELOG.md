@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.77.0 - 2026-11-20
+
+### Added
+
+- Updated icon set to lucide-static@1.77.0.
+- New icons: `boxDashed`, `chocolateBar`, `folderNetwork`, `folderPlusCorner`, `rectangleLandscapePlay`, `userRoundClock`.
+
 ## 1.76.0 - 2026-11-19
 
 ### Added

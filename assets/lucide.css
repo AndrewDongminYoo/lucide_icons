@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1795068457908"); /* IE9*/
+  src: url("lucide.eot?t=1795154846452"); /* IE9*/
   src:
-    url("lucide.eot?t=1795068457908#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1795154846452#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1795068457908") format("woff2"),
-    url("lucide.woff?t=1795068457908") format("woff"),
-    url("lucide.ttf?t=1795068457908") format("truetype"),
-    url("lucide.svg?t=1795068457908") format("svg");
+    url("lucide.woff2?t=1795154846452") format("woff2"),
+    url("lucide.woff?t=1795154846452") format("woff"),
+    url("lucide.ttf?t=1795154846452") format("truetype"),
+    url("lucide.svg?t=1795154846452") format("svg");
 }
 
 [class^="icon-"],
@@ -949,6 +949,9 @@
 .icon-bow-arrow::before {
   content: "\e65e";
 }
+.icon-box-dashed::before {
+  content: "\e87b";
+}
 .icon-box-select::before {
   content: "\e1cb";
 }
@@ -1485,6 +1488,9 @@
 }
 .icon-chevrons-up::before {
   content: "\e074";
+}
+.icon-chocolate-bar::before {
+  content: "\e87c";
 }
 .icon-church::before {
   content: "\e3e1";
@@ -2216,7 +2222,7 @@
   content: "\e830";
 }
 .icon-diagram-sankey::before {
-  content: "\e87b";
+  content: "\e87d";
 }
 .icon-diameter::before {
   content: "\e526";
@@ -2917,6 +2923,9 @@
 .icon-folder-minus::before {
   content: "\e0d8";
 }
+.icon-folder-network::before {
+  content: "\e87e";
+}
 .icon-folder-open-dot::before {
   content: "\e4c7";
 }
@@ -2928,6 +2937,9 @@
 }
 .icon-folder-pen::before {
   content: "\e338";
+}
+.icon-folder-plus-corner::before {
+  content: "\e87f";
 }
 .icon-folder-plus::before {
   content: "\e0d9";
@@ -5149,6 +5161,9 @@
 .icon-rectangle-horizontal::before {
   content: "\e376";
 }
+.icon-rectangle-landscape-play::before {
+  content: "\e880";
+}
 .icon-rectangle-vertical::before {
   content: "\e377";
 }
@@ -6858,6 +6873,9 @@
 }
 .icon-user-round-check::before {
   content: "\e469";
+}
+.icon-user-round-clock::before {
+  content: "\e881";
 }
 .icon-user-round-cog::before {
   content: "\e46a";
