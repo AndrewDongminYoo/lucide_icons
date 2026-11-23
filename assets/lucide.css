@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1795154846452"); /* IE9*/
+  src: url("lucide.eot?t=1795414213964"); /* IE9*/
   src:
-    url("lucide.eot?t=1795154846452#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1795414213964#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1795154846452") format("woff2"),
-    url("lucide.woff?t=1795154846452") format("woff"),
-    url("lucide.ttf?t=1795154846452") format("truetype"),
-    url("lucide.svg?t=1795154846452") format("svg");
+    url("lucide.woff2?t=1795414213964") format("woff2"),
+    url("lucide.woff?t=1795414213964") format("woff"),
+    url("lucide.ttf?t=1795414213964") format("truetype"),
+    url("lucide.svg?t=1795414213964") format("svg");
 }
 
 [class^="icon-"],
@@ -1756,6 +1756,9 @@
 .icon-circle-small::before {
   content: "\e640";
 }
+.icon-circle-speed-lines::before {
+  content: "\e882";
+}
 .icon-circle-star::before {
   content: "\e68d";
 }
@@ -3196,6 +3199,9 @@
 .icon-graph-hub::before {
   content: "\e7b5";
 }
+.icon-graph-path::before {
+  content: "\e883";
+}
 .icon-graph-ring::before {
   content: "\e855";
 }
@@ -3423,6 +3429,9 @@
 }
 .icon-hockey-stick::before {
   content: "\e7c1";
+}
+.icon-hole::before {
+  content: "\e884";
 }
 .icon-home::before {
   content: "\e0f5";
@@ -4632,6 +4641,9 @@
 }
 .icon-package-2::before {
   content: "\e340";
+}
+.icon-package-arrow-bend-up-left::before {
+  content: "\e885";
 }
 .icon-package-check::before {
   content: "\e266";
