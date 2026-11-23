@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.78.0 - 2026-11-23
+
+### Added
+
+- Updated icon set to lucide-static@1.78.0.
+- New icons: `circleSpeedLines`, `graphPath`, `hole`, `packageArrowBendUpLeft`.
+
 ## 1.77.0 - 2026-11-20
 
 ### Added
