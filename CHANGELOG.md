@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.79.0 - 2026-11-24
+
+### Added
+
+- Updated icon set to lucide-static@1.79.0.
+- New icons: `appWindowPlus`, `squarePlusCorner`.
+
 ## 1.78.0 - 2026-11-23
 
 ### Added
