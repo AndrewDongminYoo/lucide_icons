@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1795414213964"); /* IE9*/
+  src: url("lucide.eot?t=1795500537544"); /* IE9*/
   src:
-    url("lucide.eot?t=1795414213964#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1795500537544#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1795414213964") format("woff2"),
-    url("lucide.woff?t=1795414213964") format("woff"),
-    url("lucide.ttf?t=1795414213964") format("truetype"),
-    url("lucide.svg?t=1795414213964") format("svg");
+    url("lucide.woff2?t=1795500537544") format("woff2"),
+    url("lucide.woff?t=1795500537544") format("woff"),
+    url("lucide.ttf?t=1795500537544") format("truetype"),
+    url("lucide.svg?t=1795500537544") format("svg");
 }
 
 [class^="icon-"],
@@ -198,6 +198,9 @@
 }
 .icon-app-window-mac::before {
   content: "\e5d2";
+}
+.icon-app-window-plus::before {
+  content: "\e886";
 }
 .icon-app-window::before {
   content: "\e426";
@@ -6174,6 +6177,9 @@
 }
 .icon-square-play::before {
   content: "\e481";
+}
+.icon-square-plus-corner::before {
+  content: "\e887";
 }
 .icon-square-plus::before {
   content: "\e173";
