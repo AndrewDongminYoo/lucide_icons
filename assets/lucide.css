@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1795500537544"); /* IE9*/
+  src: url("lucide.eot?t=1795586873937"); /* IE9*/
   src:
-    url("lucide.eot?t=1795500537544#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1795586873937#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1795500537544") format("woff2"),
-    url("lucide.woff?t=1795500537544") format("woff"),
-    url("lucide.ttf?t=1795500537544") format("truetype"),
-    url("lucide.svg?t=1795500537544") format("svg");
+    url("lucide.woff2?t=1795586873937") format("woff2"),
+    url("lucide.woff?t=1795586873937") format("woff"),
+    url("lucide.ttf?t=1795586873937") format("truetype"),
+    url("lucide.svg?t=1795586873937") format("svg");
 }
 
 [class^="icon-"],
@@ -196,11 +196,20 @@
 .icon-aperture::before {
   content: "\e040";
 }
+.icon-app-window-mac-minus::before {
+  content: "\e886";
+}
+.icon-app-window-mac-plus::before {
+  content: "\e887";
+}
 .icon-app-window-mac::before {
   content: "\e5d2";
 }
+.icon-app-window-minus::before {
+  content: "\e888";
+}
 .icon-app-window-plus::before {
-  content: "\e886";
+  content: "\e889";
 }
 .icon-app-window::before {
   content: "\e426";
@@ -2002,6 +2011,12 @@
 .icon-coins::before {
   content: "\e097";
 }
+.icon-columns-2-plus-left::before {
+  content: "\e88a";
+}
+.icon-columns-2-plus-right::before {
+  content: "\e88b";
+}
 .icon-columns-2::before {
   content: "\e098";
 }
@@ -2727,6 +2742,9 @@
 }
 .icon-file-terminal::before {
   content: "\e328";
+}
+.icon-file-text-sparkles::before {
+  content: "\e88c";
 }
 .icon-file-text::before {
   content: "\e0cc";
@@ -3520,6 +3538,9 @@
 .icon-image-plus::before {
   content: "\e1f7";
 }
+.icon-image-sparkles::before {
+  content: "\e88d";
+}
 .icon-image-up::before {
   content: "\e5cb";
 }
@@ -3960,6 +3981,9 @@
 }
 .icon-list-video::before {
   content: "\e2e2";
+}
+.icon-list-x-corner::before {
+  content: "\e88e";
 }
 .icon-list-x::before {
   content: "\e240";
@@ -4972,6 +4996,9 @@
 .icon-plane-landing::before {
   content: "\e3cd";
 }
+.icon-plane-off::before {
+  content: "\e88f";
+}
 .icon-plane-takeoff::before {
   content: "\e3ce";
 }
@@ -5173,6 +5200,9 @@
 .icon-rectangle-goggles::before {
   content: "\e656";
 }
+.icon-rectangle-horizontal-plus::before {
+  content: "\e890";
+}
 .icon-rectangle-horizontal::before {
   content: "\e376";
 }
@@ -5307,6 +5337,12 @@
 }
 .icon-router::before {
   content: "\e3bf";
+}
+.icon-rows-2-plus-bottom::before {
+  content: "\e891";
+}
+.icon-rows-2-plus-top::before {
+  content: "\e892";
 }
 .icon-rows-2::before {
   content: "\e439";
@@ -5451,6 +5487,9 @@
 }
 .icon-screw::before {
   content: "\e7a0";
+}
+.icon-screwdriver::before {
+  content: "\e893";
 }
 .icon-scroll-text::before {
   content: "\e45f";
@@ -6179,7 +6218,7 @@
   content: "\e481";
 }
 .icon-square-plus-corner::before {
-  content: "\e887";
+  content: "\e894";
 }
 .icon-square-plus::before {
   content: "\e173";
@@ -6679,6 +6718,9 @@
 .icon-train-front::before {
   content: "\e506";
 }
+.icon-train-high-speed::before {
+  content: "\e895";
+}
 .icon-train-track::before {
   content: "\e508";
 }
@@ -6693,6 +6735,9 @@
 }
 .icon-trash-2::before {
   content: "\e18e";
+}
+.icon-trash-leaf::before {
+  content: "\e896";
 }
 .icon-trash-off::before {
   content: "\e763";

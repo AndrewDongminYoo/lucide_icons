@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.80.0 - 2026-11-25
+
+### Added
+
+- Updated icon set to lucide-static@1.80.0.
+- New icons: `appWindowMacMinus`, `appWindowMacPlus`, `appWindowMinus`, `columns2PlusLeft`, `columns2PlusRight`, `fileTextSparkles`, `imageSparkles`, `listXCorner`, `planeOff`, `rectangleHorizontalPlus`, `rows2PlusBottom`, `rows2PlusTop`, `screwdriver`, `trainHighSpeed`, `trashLeaf`.
+
 ## 1.79.0 - 2026-11-24
 
 ### Added
