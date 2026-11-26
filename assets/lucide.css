@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1795586873937"); /* IE9*/
+  src: url("lucide.eot?t=1795673309068"); /* IE9*/
   src:
-    url("lucide.eot?t=1795586873937#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1795673309068#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1795586873937") format("woff2"),
-    url("lucide.woff?t=1795586873937") format("woff"),
-    url("lucide.ttf?t=1795586873937") format("truetype"),
-    url("lucide.svg?t=1795586873937") format("svg");
+    url("lucide.woff2?t=1795673309068") format("woff2"),
+    url("lucide.woff?t=1795673309068") format("woff"),
+    url("lucide.ttf?t=1795673309068") format("truetype"),
+    url("lucide.svg?t=1795673309068") format("svg");
 }
 
 [class^="icon-"],
@@ -960,6 +960,9 @@
 }
 .icon-bow-arrow::before {
   content: "\e65e";
+}
+.icon-bowl-chopsticks::before {
+  content: "\e897";
 }
 .icon-box-dashed::before {
   content: "\e87b";
@@ -2437,6 +2440,9 @@
 .icon-eject::before {
   content: "\e733";
 }
+.icon-elevator::before {
+  content: "\e898";
+}
 .icon-ellipse::before {
   content: "\e6b2";
 }
@@ -3183,6 +3189,9 @@
 }
 .icon-globe-check::before {
   content: "\e6fc";
+}
+.icon-globe-clock::before {
+  content: "\e899";
 }
 .icon-globe-code::before {
   content: "\e76d";
@@ -5200,6 +5209,9 @@
 .icon-rectangle-goggles::before {
   content: "\e656";
 }
+.icon-rectangle-horizontal-play::before {
+  content: "\e880";
+}
 .icon-rectangle-horizontal-plus::before {
   content: "\e890";
 }
@@ -6327,6 +6339,9 @@
 }
 .icon-stars::before {
   content: "\e412";
+}
+.icon-steering-wheel::before {
+  content: "\e89a";
 }
 .icon-step-back::before {
   content: "\e3e9";

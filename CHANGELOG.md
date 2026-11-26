@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.81.0 - 2026-11-26
+
+### Added
+
+- Updated icon set to lucide-static@1.81.0.
+- New icons: `bowlChopsticks`, `elevator`, `globeClock`, `rectangleHorizontalPlay`, `steeringWheel`.
+
 ## 1.80.0 - 2026-11-25
 
 ### Added
