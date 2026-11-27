@@ -1,5 +1,26 @@
 # Changelog
 
+## 1.81.0 - 2026-11-26
+
+### Added
+
+- Updated icon set to lucide-static@1.81.0.
+- New icons: `bowlChopsticks`, `elevator`, `globeClock`, `rectangleHorizontalPlay`, `steeringWheel`.
+
+## 1.80.0 - 2026-11-25
+
+### Added
+
+- Updated icon set to lucide-static@1.80.0.
+- New icons: `appWindowMacMinus`, `appWindowMacPlus`, `appWindowMinus`, `columns2PlusLeft`, `columns2PlusRight`, `fileTextSparkles`, `imageSparkles`, `listXCorner`, `planeOff`, `rectangleHorizontalPlus`, `rows2PlusBottom`, `rows2PlusTop`, `screwdriver`, `trainHighSpeed`, `trashLeaf`.
+
+## 1.79.0 - 2026-11-24
+
+### Added
+
+- Updated icon set to lucide-static@1.79.0.
+- New icons: `appWindowPlus`, `squarePlusCorner`.
+
 ## 1.78.0 - 2026-11-23
 
 ### Added
