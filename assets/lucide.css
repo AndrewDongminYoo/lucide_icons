@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1795673309068"); /* IE9*/
+  src: url("lucide.eot?t=1795759736158"); /* IE9*/
   src:
-    url("lucide.eot?t=1795673309068#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1795759736158#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1795673309068") format("woff2"),
-    url("lucide.woff?t=1795673309068") format("woff"),
-    url("lucide.ttf?t=1795673309068") format("truetype"),
-    url("lucide.svg?t=1795673309068") format("svg");
+    url("lucide.woff2?t=1795759736158") format("woff2"),
+    url("lucide.woff?t=1795759736158") format("woff"),
+    url("lucide.ttf?t=1795759736158") format("truetype"),
+    url("lucide.svg?t=1795759736158") format("svg");
 }
 
 [class^="icon-"],
@@ -978,6 +978,9 @@
 }
 .icon-boxes::before {
   content: "\e2d0";
+}
+.icon-braces-sigma::before {
+  content: "\e89b";
 }
 .icon-braces::before {
   content: "\e36a";

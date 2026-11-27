@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.82.0 - 2026-11-27
+
+### Added
+
+- Updated icon set to lucide-static@1.82.0.
+- New icons: `bracesSigma`.
+
 ## 1.81.0 - 2026-11-26
 
 ### Added
