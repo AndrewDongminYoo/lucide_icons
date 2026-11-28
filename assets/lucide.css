@@ -1,13 +1,13 @@
 @font-face {
   font-family: "lucide";
-  src: url("lucide.eot?t=1795759736158"); /* IE9*/
+  src: url("lucide.eot?t=1795846114051"); /* IE9*/
   src:
-    url("lucide.eot?t=1795759736158#iefix") format("embedded-opentype")
+    url("lucide.eot?t=1795846114051#iefix") format("embedded-opentype")
       /* IE6-IE8 */,
-    url("lucide.woff2?t=1795759736158") format("woff2"),
-    url("lucide.woff?t=1795759736158") format("woff"),
-    url("lucide.ttf?t=1795759736158") format("truetype"),
-    url("lucide.svg?t=1795759736158") format("svg");
+    url("lucide.woff2?t=1795846114051") format("woff2"),
+    url("lucide.woff?t=1795846114051") format("woff"),
+    url("lucide.ttf?t=1795846114051") format("truetype"),
+    url("lucide.svg?t=1795846114051") format("svg");
 }
 
 [class^="icon-"],
@@ -598,6 +598,9 @@
 .icon-baggage-claim::before {
   content: "\e2c9";
 }
+.icon-balcony::before {
+  content: "\e89c";
+}
 .icon-ball-wave::before {
   content: "\e7bf";
 }
@@ -978,6 +981,9 @@
 }
 .icon-boxes::before {
   content: "\e2d0";
+}
+.icon-boxing-glove::before {
+  content: "\e89d";
 }
 .icon-braces-sigma::before {
   content: "\e89b";
@@ -1456,6 +1462,9 @@
 .icon-chevron-up::before {
   content: "\e070";
 }
+.icon-chevrons-down-up-offset::before {
+  content: "\e89e";
+}
 .icon-chevrons-down-up::before {
   content: "\e228";
 }
@@ -1482,6 +1491,9 @@
 }
 .icon-chevrons-left::before {
   content: "\e072";
+}
+.icon-chevrons-right-left-offset::before {
+  content: "\e89f";
 }
 .icon-chevrons-right-left::before {
   content: "\e294";
@@ -4099,6 +4111,9 @@
 .icon-mail-search::before {
   content: "\e366";
 }
+.icon-mail-send::before {
+  content: "\e8a0";
+}
 .icon-mail-warning::before {
   content: "\e367";
 }
@@ -6280,6 +6295,33 @@
 .icon-square-terminal::before {
   content: "\e20a";
 }
+.icon-square-text-align-bottom-center::before {
+  content: "\e8a1";
+}
+.icon-square-text-align-bottom-left::before {
+  content: "\e8a2";
+}
+.icon-square-text-align-bottom-right::before {
+  content: "\e8a3";
+}
+.icon-square-text-align-middle-center::before {
+  content: "\e8a4";
+}
+.icon-square-text-align-middle-left::before {
+  content: "\e8a5";
+}
+.icon-square-text-align-middle-right::before {
+  content: "\e8a6";
+}
+.icon-square-text-align-top-center::before {
+  content: "\e8a7";
+}
+.icon-square-text-align-top-left::before {
+  content: "\e8a8";
+}
+.icon-square-text-align-top-right::before {
+  content: "\e8a9";
+}
 .icon-square-text::before {
   content: "\e736";
 }
@@ -6315,6 +6357,12 @@
 }
 .icon-squirrel::before {
   content: "\e49f";
+}
+.icon-stairs-arrow-down-left::before {
+  content: "\e8aa";
+}
+.icon-stairs-arrow-up-right::before {
+  content: "\e8ab";
 }
 .icon-stamp::before {
   content: "\e3bb";
