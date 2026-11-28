@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.83.0 - 2026-11-28
+
+### Added
+
+- Updated icon set to lucide-static@1.83.0.
+- New icons: `balcony`, `boxingGlove`, `chevronsDownUpOffset`, `chevronsRightLeftOffset`, `mailSend`, `squareTextAlignBottomCenter`, `squareTextAlignBottomLeft`, `squareTextAlignBottomRight`, `squareTextAlignMiddleCenter`, `squareTextAlignMiddleLeft`, `squareTextAlignMiddleRight`, `squareTextAlignTopCenter`, `squareTextAlignTopLeft`, `squareTextAlignTopRight`, `stairsArrowDownLeft`, `stairsArrowUpRight`.
+
 ## 1.82.0 - 2026-11-27
 
 ### Added
